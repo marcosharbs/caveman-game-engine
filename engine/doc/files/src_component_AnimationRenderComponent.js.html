@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>src/component/AnimationRenderComponent.js</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            
+                <h1><img src="../assets/css/logo.png" title=""></h1>
+            
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: </em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="../classes/AnimationRenderComponent.html">AnimationRenderComponent</a></li>
+            
+                <li><a href="../classes/ArrayUtils.html">ArrayUtils</a></li>
+            
+                <li><a href="../classes/Asset.html">Asset</a></li>
+            
+                <li><a href="../classes/AssetStore.html">AssetStore</a></li>
+            
+                <li><a href="../classes/BoxObject.html">BoxObject</a></li>
+            
+                <li><a href="../classes/BoxRenderComponent.html">BoxRenderComponent</a></li>
+            
+                <li><a href="../classes/Camera.html">Camera</a></li>
+            
+                <li><a href="../classes/CircleObject.html">CircleObject</a></li>
+            
+                <li><a href="../classes/CircleRenderComponent.html">CircleRenderComponent</a></li>
+            
+                <li><a href="../classes/CollideInfo.html">CollideInfo</a></li>
+            
+                <li><a href="../classes/Component.html">Component</a></li>
+            
+                <li><a href="../classes/ComponentUtils.html">ComponentUtils</a></li>
+            
+                <li><a href="../classes/FpsMeterComponent.html">FpsMeterComponent</a></li>
+            
+                <li><a href="../classes/Game.html">Game</a></li>
+            
+                <li><a href="../classes/GameObject.html">GameObject</a></li>
+            
+                <li><a href="../classes/ImageRenderComponent.html">ImageRenderComponent</a></li>
+            
+                <li><a href="../classes/JSUtils.html">JSUtils</a></li>
+            
+                <li><a href="../classes/KeySystem.html">KeySystem</a></li>
+            
+                <li><a href="../classes/Layer.html">Layer</a></li>
+            
+                <li><a href="../classes/LogicSystem.html">LogicSystem</a></li>
+            
+                <li><a href="../classes/MouseSystem.html">MouseSystem</a></li>
+            
+                <li><a href="../classes/MoveCameraComponent.html">MoveCameraComponent</a></li>
+            
+                <li><a href="../classes/Point2D.html">Point2D</a></li>
+            
+                <li><a href="../classes/PolygonObject.html">PolygonObject</a></li>
+            
+                <li><a href="../classes/PolygonRenderComponent.html">PolygonRenderComponent</a></li>
+            
+                <li><a href="../classes/RenderSystem.html">RenderSystem</a></li>
+            
+                <li><a href="../classes/RigidBodyComponent.html">RigidBodyComponent</a></li>
+            
+                <li><a href="../classes/RotateComponent.html">RotateComponent</a></li>
+            
+                <li><a href="../classes/ScaleComponent.html">ScaleComponent</a></li>
+            
+                <li><a href="../classes/Scene.html">Scene</a></li>
+            
+                <li><a href="../classes/StringUtils.html">StringUtils</a></li>
+            
+                <li><a href="../classes/TranslateComponent.html">TranslateComponent</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: src/component/AnimationRenderComponent.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+* Component que renderiza uma animação baseada em sprites.
+*
+* @author Marcos Harbs
+* @class AnimationRenderComponent
+* @constructor
+*/
+function AnimationRenderComponent(){}
+
+AnimationRenderComponent.prototype = new Component();
+
+/**
+* Método construtor da classe AnimationRenderComponent.
+*
+* @author Marcos Harbs
+* @method initialize
+* @param {Image} spriteSheet
+* @param {Integer} columns
+* @param {Integer} rows
+* @return {AnimationRenderComponent} object
+*/
+JSUtils.addMethod(AnimationRenderComponent.prototype, &quot;initialize&quot;, 
+	function(spriteSheet, columns, rows){
+		this.initialize();
+		this.spriteSheet = spriteSheet;
+		this.columns = columns;
+		this.rows = rows;
+		this.uv = new Point2D().initialize(0,0);
+		this.stopped = true;
+		this.direction = &quot;HORIZONTAL&quot;;
+		this.animation = 0;
+		this.start = 0;
+		this.end = 0;
+		this.interactions = 0;
+		this.duration = 0;
+		this.lastUpdate = null;
+		this.currentInteraction = 0;
+		this.currentFrame = 0;
+		return this;
+	}
+);
+
+/**
+* Método sobrescrito da classe Component.
+*
+* @author Marcos Harbs
+* @method onRender
+* @param {Context} context
+*/
+AnimationRenderComponent.prototype.onRender = function(context){
+	this.uv = new Point2D().initialize(this.spriteSheet.width/this.columns,this.spriteSheet.height/this.rows);
+	if(!this.stopped &amp;&amp; 
+		this.spriteSheet &amp;&amp; 
+		this.spriteSheet.width &gt; 0 &amp;&amp; 
+		this.spriteSheet.height &gt; 0 &amp;&amp;
+		this.uv.x &gt; 0 
+		&amp;&amp; this.uv.y &gt; 0){
+		
+		var x = 0;
+		var y = 0;
+		if(this.direction == &quot;HORIZONTAL&quot;){
+			x = this.uv.x * this.currentFrame;
+			y = this.uv.y * this.animation;
+		}else if(this.direction == &quot;VERTICAL&quot;){
+			x = this.uv.x * this.animation;
+			y = this.uv.y * this.currentFrame;
+		}
+		context.drawImage(this.spriteSheet,
+				          x, y,
+				          this.uv.x, this.uv.y,
+				          this.owner.getCenterX()-(this.uv.x/2), 
+		                  this.owner.getCenterY()-(this.uv.y/2),
+		                  this.uv.x, this.uv.y);
+		var now = Date.now();
+		if(this.lastUpdate == null || (now - this.lastUpdate) &gt;= this.duration){
+			this.lastUpdate = now;
+			this.currentFrame++;
+			if(this.currentFrame &gt; this.end){
+				this.currentFrame = this.start;
+				this.currentInteraction++;
+			}
+			if(this.interactions != -1 &amp;&amp; this.currentInteraction == this.interactions){
+				this.stopped = true;
+			}
+		}
+	}
+}
+
+/**
+* Método usado para tocar uma animação da sprite sheet.
+*
+* @author Marcos Harbs
+* @method play
+* @param {String} direction
+* @param {Integer} animation
+* @param {Integer} start
+* @param {Integer} end
+* @param {Integer} interactions
+* @param {Long} duration
+*/
+AnimationRenderComponent.prototype.play = function(direction, animation, start, end, interactions, duration){
+	this.direction = direction;
+	this.animation = animation;
+	this.start = start;
+	this.end = end;
+	this.interactions = interactions;
+	this.duration = duration;
+	this.lastUpdate = null;
+	this.currentInteraction = 0;
+	this.currentFrame = start;
+	this.stopped = false;
+}
+
+/**
+* Método usado para parar uma animação.
+*
+* @author Marcos Harbs
+* @method stop
+*/
+AnimationRenderComponent.prototype.stop = function(){
+	this.stopped = true;
+}
+
+/**
+* Retorna os sistemas que deverão gerenciar este component.
+* (KEY_SYSTEM; LOGIC_SYSTEM; MOUSE_SYSTEM; RENDER_SYSTEM)
+*
+* @author Marcos Harbs
+* @method getSystems
+* @return {Array} systems
+*/
+AnimationRenderComponent.prototype.getSystems = function(){
+	var systems = new Array();
+	systems = ArrayUtils.addElement(systems, RenderSystem.getTag());
+	return systems;
+}
+
+/**
+* Método sobrescrito da classe Component.
+*
+* @author Marcos Harbs
+* @method getTag
+* @return {String} tag
+*/
+AnimationRenderComponent.prototype.getTag = function(){
+	return &quot;ANIMATION_RENDER_COMPONENT&quot;;
+}
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

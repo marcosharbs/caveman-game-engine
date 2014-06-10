@@ -1,0 +1,40 @@
+YUI.add("yuidoc-meta", function(Y) {
+   Y.YUIDoc = { meta: {
+    "classes": [
+        "AnimationRenderComponent",
+        "ArrayUtils",
+        "Asset",
+        "AssetStore",
+        "BoxObject",
+        "BoxRenderComponent",
+        "Camera",
+        "CircleObject",
+        "CircleRenderComponent",
+        "CollideInfo",
+        "Component",
+        "ComponentUtils",
+        "FpsMeterComponent",
+        "Game",
+        "GameObject",
+        "ImageRenderComponent",
+        "JSUtils",
+        "KeySystem",
+        "Layer",
+        "LogicSystem",
+        "MouseSystem",
+        "MoveCameraComponent",
+        "Point2D",
+        "PolygonObject",
+        "PolygonRenderComponent",
+        "RenderSystem",
+        "RigidBodyComponent",
+        "RotateComponent",
+        "ScaleComponent",
+        "Scene",
+        "StringUtils",
+        "TranslateComponent"
+    ],
+    "modules": [],
+    "allModules": []
+} };
+});

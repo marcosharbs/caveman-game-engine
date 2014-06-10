@@ -1,0 +1,3710 @@
+{
+    "project": {},
+    "files": {
+        "src/collide/CollideInfo.js": {
+            "name": "src/collide/CollideInfo.js",
+            "modules": {},
+            "classes": {
+                "CollideInfo": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/component/AnimationRenderComponent.js": {
+            "name": "src/component/AnimationRenderComponent.js",
+            "modules": {},
+            "classes": {
+                "AnimationRenderComponent": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/component/BoxRenderComponent.js": {
+            "name": "src/component/BoxRenderComponent.js",
+            "modules": {},
+            "classes": {
+                "BoxRenderComponent": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/component/CircleRenderComponent.js": {
+            "name": "src/component/CircleRenderComponent.js",
+            "modules": {},
+            "classes": {
+                "CircleRenderComponent": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/component/Component.js": {
+            "name": "src/component/Component.js",
+            "modules": {},
+            "classes": {
+                "Component": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/component/FpsMeterComponent.js": {
+            "name": "src/component/FpsMeterComponent.js",
+            "modules": {},
+            "classes": {
+                "FpsMeterComponent": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/component/ImageRenderComponent.js": {
+            "name": "src/component/ImageRenderComponent.js",
+            "modules": {},
+            "classes": {
+                "ImageRenderComponent": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/component/MoveCameraComponent.js": {
+            "name": "src/component/MoveCameraComponent.js",
+            "modules": {},
+            "classes": {
+                "MoveCameraComponent": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/component/PolygonRenderComponent.js": {
+            "name": "src/component/PolygonRenderComponent.js",
+            "modules": {},
+            "classes": {
+                "PolygonRenderComponent": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/component/RigidBodyComponent.js": {
+            "name": "src/component/RigidBodyComponent.js",
+            "modules": {},
+            "classes": {
+                "RigidBodyComponent": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/component/RotateComponent.js": {
+            "name": "src/component/RotateComponent.js",
+            "modules": {},
+            "classes": {
+                "RotateComponent": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/component/ScaleComponent.js": {
+            "name": "src/component/ScaleComponent.js",
+            "modules": {},
+            "classes": {
+                "ScaleComponent": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/component/TranslateComponent.js": {
+            "name": "src/component/TranslateComponent.js",
+            "modules": {},
+            "classes": {
+                "TranslateComponent": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/game/Asset.js": {
+            "name": "src/game/Asset.js",
+            "modules": {},
+            "classes": {
+                "Asset": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/game/AssetStore.js": {
+            "name": "src/game/AssetStore.js",
+            "modules": {},
+            "classes": {
+                "AssetStore": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/game/Camera.js": {
+            "name": "src/game/Camera.js",
+            "modules": {},
+            "classes": {
+                "Camera": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/game/Game.js": {
+            "name": "src/game/Game.js",
+            "modules": {},
+            "classes": {
+                "Game": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/game/Layer.js": {
+            "name": "src/game/Layer.js",
+            "modules": {},
+            "classes": {
+                "Layer": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/game/Scene.js": {
+            "name": "src/game/Scene.js",
+            "modules": {},
+            "classes": {
+                "Scene": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/gameobject/BoxObject.js": {
+            "name": "src/gameobject/BoxObject.js",
+            "modules": {},
+            "classes": {
+                "BoxObject": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/gameobject/CircleObject.js": {
+            "name": "src/gameobject/CircleObject.js",
+            "modules": {},
+            "classes": {
+                "CircleObject": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/gameobject/GameObject.js": {
+            "name": "src/gameobject/GameObject.js",
+            "modules": {},
+            "classes": {
+                "GameObject": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/gameobject/PolygonObject.js": {
+            "name": "src/gameobject/PolygonObject.js",
+            "modules": {},
+            "classes": {
+                "PolygonObject": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/geometric/Point2D.js": {
+            "name": "src/geometric/Point2D.js",
+            "modules": {},
+            "classes": {
+                "Point2D": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/system/KeySystem.js": {
+            "name": "src/system/KeySystem.js",
+            "modules": {},
+            "classes": {
+                "KeySystem": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/system/LogicSystem.js": {
+            "name": "src/system/LogicSystem.js",
+            "modules": {},
+            "classes": {
+                "LogicSystem": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/system/MouseSystem.js": {
+            "name": "src/system/MouseSystem.js",
+            "modules": {},
+            "classes": {
+                "MouseSystem": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/system/RenderSystem.js": {
+            "name": "src/system/RenderSystem.js",
+            "modules": {},
+            "classes": {
+                "RenderSystem": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/utils/ArrayUtils.js": {
+            "name": "src/utils/ArrayUtils.js",
+            "modules": {},
+            "classes": {
+                "ArrayUtils": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/utils/ComponentUtils.js": {
+            "name": "src/utils/ComponentUtils.js",
+            "modules": {},
+            "classes": {
+                "ComponentUtils": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/utils/JSUtils.js": {
+            "name": "src/utils/JSUtils.js",
+            "modules": {},
+            "classes": {
+                "JSUtils": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/utils/StringUtils.js": {
+            "name": "src/utils/StringUtils.js",
+            "modules": {},
+            "classes": {
+                "StringUtils": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {
+        "CollideInfo": {
+            "name": "CollideInfo",
+            "shortname": "CollideInfo",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/collide/CollideInfo.js",
+            "line": 1,
+            "description": "Classe que guarda um par de objetos de colidiram.",
+            "author": "Marcos Harbs",
+            "is_constructor": 1
+        },
+        "AnimationRenderComponent": {
+            "name": "AnimationRenderComponent",
+            "shortname": "AnimationRenderComponent",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/component/AnimationRenderComponent.js",
+            "line": 1,
+            "description": "Component que renderiza uma animação baseada em sprites.",
+            "author": "Marcos Harbs",
+            "is_constructor": 1
+        },
+        "BoxRenderComponent": {
+            "name": "BoxRenderComponent",
+            "shortname": "BoxRenderComponent",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/component/BoxRenderComponent.js",
+            "line": 1,
+            "description": "Component que renderiza um retângulo.",
+            "author": "Marcos Harbs",
+            "is_constructor": 1
+        },
+        "CircleRenderComponent": {
+            "name": "CircleRenderComponent",
+            "shortname": "CircleRenderComponent",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/component/CircleRenderComponent.js",
+            "line": 1,
+            "description": "Component que renderiza um círculo.",
+            "author": "Marcos Harbs",
+            "is_constructor": 1
+        },
+        "Component": {
+            "name": "Component",
+            "shortname": "Component",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/component/Component.js",
+            "line": 1,
+            "description": "Classe que defini o comportamento de um Componente.",
+            "author": "Marcos Harbs",
+            "is_constructor": 1
+        },
+        "FpsMeterComponent": {
+            "name": "FpsMeterComponent",
+            "shortname": "FpsMeterComponent",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/component/FpsMeterComponent.js",
+            "line": 1,
+            "description": "Componente usado para medir o frame rate do jogo.",
+            "author": "Marcos Harbs",
+            "is_constructor": 1
+        },
+        "ImageRenderComponent": {
+            "name": "ImageRenderComponent",
+            "shortname": "ImageRenderComponent",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/component/ImageRenderComponent.js",
+            "line": 1,
+            "description": "Component que renderiza uma imagem.",
+            "author": "Marcos Harbs",
+            "is_constructor": 1
+        },
+        "MoveCameraComponent": {
+            "name": "MoveCameraComponent",
+            "shortname": "MoveCameraComponent",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/component/MoveCameraComponent.js",
+            "line": 1,
+            "description": "Componentel que movimenta a camera atual do jogo.",
+            "author": "Marcos Harbs",
+            "is_constructor": 1
+        },
+        "PolygonRenderComponent": {
+            "name": "PolygonRenderComponent",
+            "shortname": "PolygonRenderComponent",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/component/PolygonRenderComponent.js",
+            "line": 1,
+            "description": "Component que renderiza um polígono.",
+            "author": "Marcos Harbs",
+            "is_constructor": 1
+        },
+        "RigidBodyComponent": {
+            "name": "RigidBodyComponent",
+            "shortname": "RigidBodyComponent",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/component/RigidBodyComponent.js",
+            "line": 1,
+            "description": "Component que aplica a física de corpos rígidos no objeto.",
+            "author": "Marcos Harbs",
+            "is_constructor": 1
+        },
+        "RotateComponent": {
+            "name": "RotateComponent",
+            "shortname": "RotateComponent",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/component/RotateComponent.js",
+            "line": 1,
+            "description": "Component que aplica uma rotação no objeto associado.",
+            "author": "Marcos Harbs",
+            "is_constructor": 1
+        },
+        "ScaleComponent": {
+            "name": "ScaleComponent",
+            "shortname": "ScaleComponent",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/component/ScaleComponent.js",
+            "line": 1,
+            "description": "Component que aplica uma escala no objeto associado.",
+            "author": "Marcos Harbs",
+            "is_constructor": 1
+        },
+        "TranslateComponent": {
+            "name": "TranslateComponent",
+            "shortname": "TranslateComponent",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/component/TranslateComponent.js",
+            "line": 1,
+            "description": "Component que aplica uma translação no objeto associado.",
+            "author": "Marcos Harbs",
+            "is_constructor": 1
+        },
+        "Asset": {
+            "name": "Asset",
+            "shortname": "Asset",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/game/Asset.js",
+            "line": 1,
+            "description": "Classe que defini um recurso utilizado pelo jogo (imagem, som, etc...).",
+            "author": "Marcos Harbs",
+            "is_constructor": 1
+        },
+        "AssetStore": {
+            "name": "AssetStore",
+            "shortname": "AssetStore",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/game/AssetStore.js",
+            "line": 1,
+            "description": "Classe que guarda e gerencia os assets do jogo.",
+            "author": "Marcos Harbs",
+            "static": 1
+        },
+        "Camera": {
+            "name": "Camera",
+            "shortname": "Camera",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/game/Camera.js",
+            "line": 1,
+            "description": "Classe que representa uma câmera.",
+            "author": "Marcos Harbs",
+            "is_constructor": 1
+        },
+        "Game": {
+            "name": "Game",
+            "shortname": "Game",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/game/Game.js",
+            "line": 1,
+            "description": "Classe que representa o jogo.",
+            "author": "Marcos Harbs",
+            "static": 1
+        },
+        "Layer": {
+            "name": "Layer",
+            "shortname": "Layer",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/game/Layer.js",
+            "line": 1,
+            "description": "Classe que defini uma camada de uma cena.",
+            "author": "Marcos Harbs",
+            "is_constructor": 1
+        },
+        "Scene": {
+            "name": "Scene",
+            "shortname": "Scene",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/game/Scene.js",
+            "line": 1,
+            "description": "Classe que defini uma cena do jogo.",
+            "author": "Marcos Harbs",
+            "is_constructor": 1
+        },
+        "BoxObject": {
+            "name": "BoxObject",
+            "shortname": "BoxObject",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/gameobject/BoxObject.js",
+            "line": 1,
+            "description": "Classe que representa um objeto do tipo box.",
+            "author": "Marcos Harbs",
+            "is_constructor": 1
+        },
+        "CircleObject": {
+            "name": "CircleObject",
+            "shortname": "CircleObject",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/gameobject/CircleObject.js",
+            "line": 1,
+            "description": "Classe que representa um objeto do tipo circle.",
+            "author": "Marcos Harbs",
+            "is_constructor": 1
+        },
+        "GameObject": {
+            "name": "GameObject",
+            "shortname": "GameObject",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/gameobject/GameObject.js",
+            "line": 1,
+            "description": "Classe que representa um objeto do jogo.",
+            "author": "Marcos Harbs",
+            "is_constructor": 1
+        },
+        "PolygonObject": {
+            "name": "PolygonObject",
+            "shortname": "PolygonObject",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/gameobject/PolygonObject.js",
+            "line": 1,
+            "description": "Classe que representa um objeto do tipo polígono.",
+            "author": "Marcos Harbs",
+            "is_constructor": 1
+        },
+        "Point2D": {
+            "name": "Point2D",
+            "shortname": "Point2D",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/geometric/Point2D.js",
+            "line": 1,
+            "description": "Classe usada para representar um ponto no espaço 2D.",
+            "author": "Marcos Harbs",
+            "is_constructor": 1
+        },
+        "KeySystem": {
+            "name": "KeySystem",
+            "shortname": "KeySystem",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/system/KeySystem.js",
+            "line": 1,
+            "description": "Classe responsável por propagar os eventos de teclado.",
+            "author": "Marcos Harbs",
+            "static": 1
+        },
+        "LogicSystem": {
+            "name": "LogicSystem",
+            "shortname": "LogicSystem",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/system/LogicSystem.js",
+            "line": 1,
+            "description": "Classe responsável por propagar os eventos de atualização de objetos.",
+            "author": "Marcos Harbs",
+            "static": 1
+        },
+        "MouseSystem": {
+            "name": "MouseSystem",
+            "shortname": "MouseSystem",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/system/MouseSystem.js",
+            "line": 1,
+            "description": "Classe responsável por propagar os eventos de mouse.",
+            "author": "Marcos Harbs",
+            "static": 1
+        },
+        "RenderSystem": {
+            "name": "RenderSystem",
+            "shortname": "RenderSystem",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/system/RenderSystem.js",
+            "line": 1,
+            "description": "Classe responsável por propagar os eventos de renderização de objetos.",
+            "author": "Marcos Harbs",
+            "static": 1
+        },
+        "ArrayUtils": {
+            "name": "ArrayUtils",
+            "shortname": "ArrayUtils",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/utils/ArrayUtils.js",
+            "line": 1,
+            "description": "Classe com funções comuns para operações em Arrays.",
+            "author": "Marcos Harbs",
+            "static": 1
+        },
+        "ComponentUtils": {
+            "name": "ComponentUtils",
+            "shortname": "ComponentUtils",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/utils/ComponentUtils.js",
+            "line": 1,
+            "description": "Classe com funções comuns para operações em Componentes.",
+            "author": "Marcos Harbs",
+            "static": 1
+        },
+        "JSUtils": {
+            "name": "JSUtils",
+            "shortname": "JSUtils",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/utils/JSUtils.js",
+            "line": 1,
+            "description": "Classe com funções Javascript comuns.",
+            "author": "Marcos Harbs",
+            "static": 1
+        },
+        "StringUtils": {
+            "name": "StringUtils",
+            "shortname": "StringUtils",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src/utils/StringUtils.js",
+            "line": 1,
+            "description": "Classe com funções comuns para operações em Strings.",
+            "author": "Marcos Harbs",
+            "static": 1
+        }
+    },
+    "classitems": [
+        {
+            "file": "src/collide/CollideInfo.js",
+            "line": 10,
+            "description": "Método construtor da classe CollideInfo.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "initialize",
+            "params": [
+                {
+                    "name": "gameObject1",
+                    "description": "",
+                    "type": "GameObject"
+                },
+                {
+                    "name": "gameObject2",
+                    "description": "",
+                    "type": "GameObject"
+                }
+            ],
+            "return": {
+                "description": "object",
+                "type": "CollideInfo"
+            },
+            "class": "CollideInfo"
+        },
+        {
+            "file": "src/component/AnimationRenderComponent.js",
+            "line": 12,
+            "description": "Método construtor da classe AnimationRenderComponent.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "initialize",
+            "params": [
+                {
+                    "name": "spriteSheet",
+                    "description": "",
+                    "type": "Image"
+                },
+                {
+                    "name": "columns",
+                    "description": "",
+                    "type": "Integer"
+                },
+                {
+                    "name": "rows",
+                    "description": "",
+                    "type": "Integer"
+                }
+            ],
+            "return": {
+                "description": "object",
+                "type": "AnimationRenderComponent"
+            },
+            "class": "AnimationRenderComponent"
+        },
+        {
+            "file": "src/component/AnimationRenderComponent.js",
+            "line": 43,
+            "description": "Método sobrescrito da classe Component.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "onRender",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Context"
+                }
+            ],
+            "class": "AnimationRenderComponent"
+        },
+        {
+            "file": "src/component/AnimationRenderComponent.js",
+            "line": 89,
+            "description": "Método usado para tocar uma animação da sprite sheet.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "play",
+            "params": [
+                {
+                    "name": "direction",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "animation",
+                    "description": "",
+                    "type": "Integer"
+                },
+                {
+                    "name": "start",
+                    "description": "",
+                    "type": "Integer"
+                },
+                {
+                    "name": "end",
+                    "description": "",
+                    "type": "Integer"
+                },
+                {
+                    "name": "interactions",
+                    "description": "",
+                    "type": "Integer"
+                },
+                {
+                    "name": "duration",
+                    "description": "",
+                    "type": "Long"
+                }
+            ],
+            "class": "AnimationRenderComponent"
+        },
+        {
+            "file": "src/component/AnimationRenderComponent.js",
+            "line": 114,
+            "description": "Método usado para parar uma animação.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "stop",
+            "class": "AnimationRenderComponent"
+        },
+        {
+            "file": "src/component/AnimationRenderComponent.js",
+            "line": 124,
+            "description": "Retorna os sistemas que deverão gerenciar este component.\n(KEY_SYSTEM; LOGIC_SYSTEM; MOUSE_SYSTEM; RENDER_SYSTEM)",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getSystems",
+            "return": {
+                "description": "systems",
+                "type": "Array"
+            },
+            "class": "AnimationRenderComponent"
+        },
+        {
+            "file": "src/component/AnimationRenderComponent.js",
+            "line": 138,
+            "description": "Método sobrescrito da classe Component.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getTag",
+            "return": {
+                "description": "tag",
+                "type": "String"
+            },
+            "class": "AnimationRenderComponent"
+        },
+        {
+            "file": "src/component/BoxRenderComponent.js",
+            "line": 12,
+            "description": "Método construtor da classe BoxRenderComponent.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "initialize",
+            "params": [
+                {
+                    "name": "fillStyle",
+                    "description": "",
+                    "type": "Color"
+                },
+                {
+                    "name": "strokeStyle",
+                    "description": "",
+                    "type": "Color"
+                }
+            ],
+            "return": {
+                "description": "object",
+                "type": "BoxRenderComponent"
+            },
+            "class": "BoxRenderComponent"
+        },
+        {
+            "file": "src/component/BoxRenderComponent.js",
+            "line": 30,
+            "description": "Retorna os sistemas que deverão gerenciar este component.\n(KEY_SYSTEM; LOGIC_SYSTEM; MOUSE_SYSTEM; RENDER_SYSTEM)",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getSystems",
+            "return": {
+                "description": "systems",
+                "type": "Array"
+            },
+            "class": "BoxRenderComponent"
+        },
+        {
+            "file": "src/component/BoxRenderComponent.js",
+            "line": 44,
+            "description": "Método sobrescrito da classe Component.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "onRender",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Context"
+                }
+            ],
+            "class": "BoxRenderComponent"
+        },
+        {
+            "file": "src/component/BoxRenderComponent.js",
+            "line": 68,
+            "description": "Método sobrescrito da classe Component.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getTag",
+            "return": {
+                "description": "tag",
+                "type": "String"
+            },
+            "class": "BoxRenderComponent"
+        },
+        {
+            "file": "src/component/CircleRenderComponent.js",
+            "line": 12,
+            "description": "Método construtor da classe CircleRenderComponent.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "initialize",
+            "params": [
+                {
+                    "name": "fillStyle",
+                    "description": "",
+                    "type": "Color"
+                },
+                {
+                    "name": "strokeStyle",
+                    "description": "",
+                    "type": "Color"
+                }
+            ],
+            "return": {
+                "description": "object",
+                "type": "CircleRenderComponent"
+            },
+            "class": "CircleRenderComponent"
+        },
+        {
+            "file": "src/component/CircleRenderComponent.js",
+            "line": 30,
+            "description": "Retorna os sistemas que deverão gerenciar este component.\n(KEY_SYSTEM; LOGIC_SYSTEM; MOUSE_SYSTEM; RENDER_SYSTEM)",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getSystems",
+            "return": {
+                "description": "systems",
+                "type": "Array"
+            },
+            "class": "CircleRenderComponent"
+        },
+        {
+            "file": "src/component/CircleRenderComponent.js",
+            "line": 44,
+            "description": "Método sobrescrito da classe Component.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "onRender",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Context"
+                }
+            ],
+            "class": "CircleRenderComponent"
+        },
+        {
+            "file": "src/component/CircleRenderComponent.js",
+            "line": 69,
+            "description": "Método sobrescrito da classe Component.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getTag",
+            "return": {
+                "description": "tag",
+                "type": "String"
+            },
+            "class": "CircleRenderComponent"
+        },
+        {
+            "file": "src/component/Component.js",
+            "line": 10,
+            "description": "Método construtor da classe Component.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "initialize",
+            "params": [
+                {
+                    "name": "owner",
+                    "description": "",
+                    "type": "GameObject"
+                }
+            ],
+            "return": {
+                "description": "object",
+                "type": "Component"
+            },
+            "class": "Component"
+        },
+        {
+            "file": "src/component/Component.js",
+            "line": 27,
+            "description": "Envia uma mensagem para os outros componentes do objeto.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "sendLocalMessage",
+            "params": [
+                {
+                    "name": "message",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "extras",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "class": "Component"
+        },
+        {
+            "file": "src/component/Component.js",
+            "line": 46,
+            "description": "Envia uma mensagem para os outros componentes do objeto de parâmetro.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "sendMessage",
+            "params": [
+                {
+                    "name": "object",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "message",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "extras",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "class": "Component"
+        },
+        {
+            "file": "src/component/Component.js",
+            "line": 66,
+            "description": "Retorna os sistemas que deverão gerenciar este component.\n(KEY_SYSTEM; LOGIC_SYSTEM; MOUSE_SYSTEM; RENDER_SYSTEM)\nEste método deve ser sobrescrito nas subclasses.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getSystems",
+            "return": {
+                "description": "systems",
+                "type": "Array"
+            },
+            "class": "Component"
+        },
+        {
+            "file": "src/component/Component.js",
+            "line": 77,
+            "description": "Callback chamado quando algum componente enviar uma mensagem para este.\nEste método deve ser sobrescrito nas subclasses.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "onReceiveMessage",
+            "params": [
+                {
+                    "name": "message",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "extras",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "class": "Component"
+        },
+        {
+            "file": "src/component/Component.js",
+            "line": 88,
+            "description": "Callback chamado quando o usuário apertar uma tecla.\nEste método deve ser sobrescrito nas subclasses.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "onKeyDown",
+            "params": [
+                {
+                    "name": "keyCode",
+                    "description": "",
+                    "type": "Integer"
+                }
+            ],
+            "class": "Component"
+        },
+        {
+            "file": "src/component/Component.js",
+            "line": 98,
+            "description": "Callback chamado quando o usuário soltar uma tecla.\nEste método deve ser sobrescrito nas subclasses.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "onKeyUp",
+            "params": [
+                {
+                    "name": "keyCode",
+                    "description": "",
+                    "type": "Integer"
+                }
+            ],
+            "class": "Component"
+        },
+        {
+            "file": "src/component/Component.js",
+            "line": 108,
+            "description": "Callback chamado quando o usuário clicar com o mouse.\nEste método deve ser sobrescrito nas subclasses.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "onClick",
+            "params": [
+                {
+                    "name": "x",
+                    "description": "",
+                    "type": "Integer"
+                },
+                {
+                    "name": "y",
+                    "description": "",
+                    "type": "Integer"
+                },
+                {
+                    "name": "wich",
+                    "description": "",
+                    "type": "Integer"
+                }
+            ],
+            "class": "Component"
+        },
+        {
+            "file": "src/component/Component.js",
+            "line": 120,
+            "description": "Callback chamado quando o usuário pressionar o mouse.\nEste método deve ser sobrescrito nas subclasses.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "onMouseDown",
+            "params": [
+                {
+                    "name": "x",
+                    "description": "",
+                    "type": "Integer"
+                },
+                {
+                    "name": "y",
+                    "description": "",
+                    "type": "Integer"
+                },
+                {
+                    "name": "wich",
+                    "description": "",
+                    "type": "Integer"
+                }
+            ],
+            "class": "Component"
+        },
+        {
+            "file": "src/component/Component.js",
+            "line": 132,
+            "description": "Callback chamado quando o usuário soltar o mouse.\nEste método deve ser sobrescrito nas subclasses.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "onMouseUp",
+            "params": [
+                {
+                    "name": "x",
+                    "description": "",
+                    "type": "Integer"
+                },
+                {
+                    "name": "y",
+                    "description": "",
+                    "type": "Integer"
+                },
+                {
+                    "name": "wich",
+                    "description": "",
+                    "type": "Integer"
+                }
+            ],
+            "class": "Component"
+        },
+        {
+            "file": "src/component/Component.js",
+            "line": 144,
+            "description": "Callback chamado quando o usuário mover o mouse.\nEste método deve ser sobrescrito nas subclasses.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "onMouseMove",
+            "params": [
+                {
+                    "name": "x",
+                    "description": "",
+                    "type": "Integer"
+                },
+                {
+                    "name": "y",
+                    "description": "",
+                    "type": "Integer"
+                }
+            ],
+            "class": "Component"
+        },
+        {
+            "file": "src/component/Component.js",
+            "line": 155,
+            "description": "Callback chamado antes do objeto ser renderizado.\nEste método deve ser sobrescrito nas subclasses.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "onBeforeRender",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Context"
+                }
+            ],
+            "class": "Component"
+        },
+        {
+            "file": "src/component/Component.js",
+            "line": 165,
+            "description": "Callback chamado quando o objeto for renderizado.\nEste método deve ser sobrescrito nas subclasses.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "onRender",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Context"
+                }
+            ],
+            "class": "Component"
+        },
+        {
+            "file": "src/component/Component.js",
+            "line": 175,
+            "description": "Callback chamado quando o objeto for atualizado.\nEste método deve ser sobrescrito nas subclasses.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "onUpdate",
+            "params": [
+                {
+                    "name": "delta",
+                    "description": "",
+                    "type": "Long"
+                }
+            ],
+            "class": "Component"
+        },
+        {
+            "file": "src/component/Component.js",
+            "line": 185,
+            "description": "Callback chamado quando o objeto colidir com outro objeto.\nEste método deve ser sobrescrito nas subclasses.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "onCollide",
+            "params": [
+                {
+                    "name": "otherGameObject",
+                    "description": "",
+                    "type": "GameObject"
+                }
+            ],
+            "class": "Component"
+        },
+        {
+            "file": "src/component/Component.js",
+            "line": 195,
+            "description": "Callback chamado quando o component é carregado.\nEste método deve ser sobrescrito nas subclasses.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "onLoad",
+            "class": "Component"
+        },
+        {
+            "file": "src/component/Component.js",
+            "line": 204,
+            "description": "Callback chamado quando o component é destruído.\nEste método deve ser sobrescrito nas subclasses.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "onDestroy",
+            "class": "Component"
+        },
+        {
+            "file": "src/component/Component.js",
+            "line": 219,
+            "description": "Retorna a tag deste objeto.\nEste método deve ser sobrescrito nas subclasses.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getTag",
+            "return": {
+                "description": "tag",
+                "type": "String"
+            },
+            "class": "Component"
+        },
+        {
+            "file": "src/component/FpsMeterComponent.js",
+            "line": 16,
+            "description": "Retorna os sistemas que deverão gerenciar este component.\n(KEY_SYSTEM; LOGIC_SYSTEM; MOUSE_SYSTEM; RENDER_SYSTEM)",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getSystems",
+            "return": {
+                "description": "systems",
+                "type": "Array"
+            },
+            "class": "FpsMeterComponent"
+        },
+        {
+            "file": "src/component/FpsMeterComponent.js",
+            "line": 30,
+            "description": "Método sobrescrito da classe Component.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "onBeforeRender",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Context"
+                }
+            ],
+            "class": "FpsMeterComponent"
+        },
+        {
+            "file": "src/component/FpsMeterComponent.js",
+            "line": 39,
+            "description": "Método sobrescrito da classe Component.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "onRender",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Context"
+                }
+            ],
+            "class": "FpsMeterComponent"
+        },
+        {
+            "file": "src/component/FpsMeterComponent.js",
+            "line": 60,
+            "description": "Método sobrescrito da classe Component.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getTag",
+            "return": {
+                "description": "tag",
+                "type": "String"
+            },
+            "class": "FpsMeterComponent"
+        },
+        {
+            "file": "src/component/ImageRenderComponent.js",
+            "line": 12,
+            "description": "Método construtor da classe ImageRenderComponent.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "initialize",
+            "params": [
+                {
+                    "name": "image",
+                    "description": "",
+                    "type": "Image"
+                }
+            ],
+            "return": {
+                "description": "object",
+                "type": "ImageRenderComponent"
+            },
+            "class": "ImageRenderComponent"
+        },
+        {
+            "file": "src/component/ImageRenderComponent.js",
+            "line": 38,
+            "description": "Retorna os sistemas que deverão gerenciar este component.\n(KEY_SYSTEM; LOGIC_SYSTEM; MOUSE_SYSTEM; RENDER_SYSTEM)",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getSystems",
+            "return": {
+                "description": "systems",
+                "type": "Array"
+            },
+            "class": "ImageRenderComponent"
+        },
+        {
+            "file": "src/component/ImageRenderComponent.js",
+            "line": 52,
+            "description": "Método sobrescrito da classe Component.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "onRender",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Context"
+                }
+            ],
+            "class": "ImageRenderComponent"
+        },
+        {
+            "file": "src/component/ImageRenderComponent.js",
+            "line": 85,
+            "description": "Método sobrescrito da classe Component.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getTag",
+            "return": {
+                "description": "tag",
+                "type": "String"
+            },
+            "class": "ImageRenderComponent"
+        },
+        {
+            "file": "src/component/MoveCameraComponent.js",
+            "line": 12,
+            "description": "Método construtor da classe MoveCameraComponent.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "initialize",
+            "params": [
+                {
+                    "name": "leftKey",
+                    "description": "",
+                    "type": "Integer"
+                },
+                {
+                    "name": "rightKey",
+                    "description": "",
+                    "type": "Integer"
+                },
+                {
+                    "name": "upKey",
+                    "description": "",
+                    "type": "Integer"
+                },
+                {
+                    "name": "downKey",
+                    "description": "",
+                    "type": "Integer"
+                },
+                {
+                    "name": "zoomInKey",
+                    "description": "",
+                    "type": "Integer"
+                },
+                {
+                    "name": "zoomOutKey",
+                    "description": "",
+                    "type": "Integer"
+                },
+                {
+                    "name": "rotatetKey",
+                    "description": "",
+                    "type": "Integer"
+                },
+                {
+                    "name": "rotatetInverseKey",
+                    "description": "",
+                    "type": "Integer"
+                },
+                {
+                    "name": "translateFactor",
+                    "description": "",
+                    "type": "Float"
+                },
+                {
+                    "name": "scaleFactor",
+                    "description": "",
+                    "type": "Float"
+                },
+                {
+                    "name": "rotateFactor",
+                    "description": "",
+                    "type": "Float"
+                }
+            ],
+            "return": {
+                "description": "object",
+                "type": "MoveCameraComponent"
+            },
+            "class": "MoveCameraComponent"
+        },
+        {
+            "file": "src/component/MoveCameraComponent.js",
+            "line": 59,
+            "description": "Movimenta a camera com base na função escolhida.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "fireKeyDownListener",
+            "params": [
+                {
+                    "name": "keyCode",
+                    "description": "",
+                    "type": "Float"
+                }
+            ],
+            "class": "MoveCameraComponent"
+        },
+        {
+            "file": "src/component/MoveCameraComponent.js",
+            "line": 92,
+            "description": "Retorna os sistemas que deverão gerenciar este component.\n(KEY_SYSTEM; LOGIC_SYSTEM; MOUSE_SYSTEM; RENDER_SYSTEM)",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getSystems",
+            "return": {
+                "description": "systems",
+                "type": "Array"
+            },
+            "class": "MoveCameraComponent"
+        },
+        {
+            "file": "src/component/MoveCameraComponent.js",
+            "line": 106,
+            "description": "Método sobrescrito da classe Component.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getTag",
+            "return": {
+                "description": "tag",
+                "type": "String"
+            },
+            "class": "MoveCameraComponent"
+        },
+        {
+            "file": "src/component/PolygonRenderComponent.js",
+            "line": 12,
+            "description": "Método construtor da classe PolygonRenderComponent.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "initialize",
+            "params": [
+                {
+                    "name": "fillStyle",
+                    "description": "",
+                    "type": "Color"
+                },
+                {
+                    "name": "strokeStyle",
+                    "description": "",
+                    "type": "Color"
+                }
+            ],
+            "return": {
+                "description": "object",
+                "type": "PolygonRenderComponent"
+            },
+            "class": "PolygonRenderComponent"
+        },
+        {
+            "file": "src/component/PolygonRenderComponent.js",
+            "line": 30,
+            "description": "Retorna os sistemas que deverão gerenciar este component.\n(KEY_SYSTEM; LOGIC_SYSTEM; MOUSE_SYSTEM; RENDER_SYSTEM)",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getSystems",
+            "return": {
+                "description": "systems",
+                "type": "Array"
+            },
+            "class": "PolygonRenderComponent"
+        },
+        {
+            "file": "src/component/PolygonRenderComponent.js",
+            "line": 44,
+            "description": "Método sobrescrito da classe Component.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "onRender",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Context"
+                }
+            ],
+            "class": "PolygonRenderComponent"
+        },
+        {
+            "file": "src/component/PolygonRenderComponent.js",
+            "line": 81,
+            "description": "Método sobrescrito da classe Component.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getTag",
+            "return": {
+                "description": "tag",
+                "type": "String"
+            },
+            "class": "PolygonRenderComponent"
+        },
+        {
+            "file": "src/component/RigidBodyComponent.js",
+            "line": 12,
+            "description": "Método construtor da classe RigidBodyComponent.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "initialize",
+            "params": [
+                {
+                    "name": "restitution",
+                    "description": "",
+                    "type": "Float"
+                },
+                {
+                    "name": "density",
+                    "description": "",
+                    "type": "Float"
+                },
+                {
+                    "name": "preventRotation",
+                    "description": "",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "allowSleep",
+                    "description": "",
+                    "type": "AllowSleep"
+                },
+                {
+                    "name": "friction",
+                    "description": "",
+                    "type": "Float"
+                }
+            ],
+            "return": {
+                "description": "object",
+                "type": "RigidBodyComponent"
+            },
+            "class": "RigidBodyComponent"
+        },
+        {
+            "file": "src/component/RigidBodyComponent.js",
+            "line": 36,
+            "description": "Retorna os sistemas que deverão gerenciar este component.\n(KEY_SYSTEM; LOGIC_SYSTEM; MOUSE_SYSTEM; RENDER_SYSTEM)",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getSystems",
+            "return": {
+                "description": "systems",
+                "type": "Array"
+            },
+            "class": "RigidBodyComponent"
+        },
+        {
+            "file": "src/component/RigidBodyComponent.js",
+            "line": 50,
+            "description": "Método sobrescrito da classe Component.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "onUpdate",
+            "params": [
+                {
+                    "name": "deltaTime",
+                    "description": "",
+                    "type": "Float"
+                }
+            ],
+            "class": "RigidBodyComponent"
+        },
+        {
+            "file": "src/component/RigidBodyComponent.js",
+            "line": 64,
+            "description": "Método sobrescrito da classe Component.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "onLoad",
+            "class": "RigidBodyComponent"
+        },
+        {
+            "file": "src/component/RigidBodyComponent.js",
+            "line": 74,
+            "description": "Método sobrescrito da classe Component.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "onDestroy",
+            "class": "RigidBodyComponent"
+        },
+        {
+            "file": "src/component/RigidBodyComponent.js",
+            "line": 84,
+            "description": "Cria um corpo com base nas definições do GameObject\ne adiciona este corpo no mundo para ser gerenciado \npela Box2D.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "createPhysicsBody",
+            "class": "RigidBodyComponent"
+        },
+        {
+            "file": "src/component/RigidBodyComponent.js",
+            "line": 122,
+            "description": "Destrói o corpo da Box2D.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "drestroyBody",
+            "class": "RigidBodyComponent"
+        },
+        {
+            "file": "src/component/RigidBodyComponent.js",
+            "line": 132,
+            "description": "Método sobrescrito da classe Component.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getTag",
+            "return": {
+                "description": "tag",
+                "type": "String"
+            },
+            "class": "RigidBodyComponent"
+        },
+        {
+            "file": "src/component/RotateComponent.js",
+            "line": 12,
+            "description": "Método construtor da classe RotateComponent.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "initialize",
+            "params": [
+                {
+                    "name": "angle",
+                    "description": "",
+                    "type": "Float"
+                }
+            ],
+            "return": {
+                "description": "object",
+                "type": "RotateComponent"
+            },
+            "class": "RotateComponent"
+        },
+        {
+            "file": "src/component/RotateComponent.js",
+            "line": 28,
+            "description": "Retorna os sistemas que deverão gerenciar este component.\n(KEY_SYSTEM; LOGIC_SYSTEM; MOUSE_SYSTEM; RENDER_SYSTEM)",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getSystems",
+            "return": {
+                "description": "systems",
+                "type": "Array"
+            },
+            "class": "RotateComponent"
+        },
+        {
+            "file": "src/component/RotateComponent.js",
+            "line": 42,
+            "description": "Define a rotação do objeto.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "setRotate",
+            "params": [
+                {
+                    "name": "angle",
+                    "description": "",
+                    "type": "Float"
+                }
+            ],
+            "class": "RotateComponent"
+        },
+        {
+            "file": "src/component/RotateComponent.js",
+            "line": 60,
+            "description": "Retorna o ângulo do objeto.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getAngle",
+            "return": {
+                "description": "angle",
+                "type": "Float"
+            },
+            "class": "RotateComponent"
+        },
+        {
+            "file": "src/component/RotateComponent.js",
+            "line": 77,
+            "description": "Função que realiza a transformação de rotação no canvas.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "rotate",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Context"
+                }
+            ],
+            "class": "RotateComponent"
+        },
+        {
+            "file": "src/component/RotateComponent.js",
+            "line": 92,
+            "description": "Método sobrescrito da classe Component.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "onBeforeRender",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Context"
+                }
+            ],
+            "class": "RotateComponent"
+        },
+        {
+            "file": "src/component/RotateComponent.js",
+            "line": 103,
+            "description": "Método sobrescrito da classe Component.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getTag",
+            "return": {
+                "description": "tag",
+                "type": "String"
+            },
+            "class": "RotateComponent"
+        },
+        {
+            "file": "src/component/ScaleComponent.js",
+            "line": 12,
+            "description": "Método construtor da classe ScaleComponent.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "initialize",
+            "params": [
+                {
+                    "name": "x",
+                    "description": "",
+                    "type": "Float"
+                },
+                {
+                    "name": "y",
+                    "description": "",
+                    "type": "Float"
+                }
+            ],
+            "return": {
+                "description": "object",
+                "type": "ScaleComponent"
+            },
+            "class": "ScaleComponent"
+        },
+        {
+            "file": "src/component/ScaleComponent.js",
+            "line": 29,
+            "description": "Retorna os sistemas que deverão gerenciar este component.\n(KEY_SYSTEM; LOGIC_SYSTEM; MOUSE_SYSTEM; RENDER_SYSTEM)",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getSystems",
+            "return": {
+                "description": "systems",
+                "type": "Array"
+            },
+            "class": "ScaleComponent"
+        },
+        {
+            "file": "src/component/ScaleComponent.js",
+            "line": 43,
+            "description": "Define a escala do objeto.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "setScale",
+            "params": [
+                {
+                    "name": "x",
+                    "description": "",
+                    "type": "Float"
+                },
+                {
+                    "name": "y",
+                    "description": "",
+                    "type": "Float"
+                }
+            ],
+            "class": "ScaleComponent"
+        },
+        {
+            "file": "src/component/ScaleComponent.js",
+            "line": 57,
+            "description": "Função que realiza a transformação escala no canvas.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "scale",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Context"
+                }
+            ],
+            "class": "ScaleComponent"
+        },
+        {
+            "file": "src/component/ScaleComponent.js",
+            "line": 72,
+            "description": "Método sobrescrito da classe Component.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "onBeforeRender",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Context"
+                }
+            ],
+            "class": "ScaleComponent"
+        },
+        {
+            "file": "src/component/ScaleComponent.js",
+            "line": 83,
+            "description": "Método sobrescrito da classe Component.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getTag",
+            "return": {
+                "description": "tag",
+                "type": "String"
+            },
+            "class": "ScaleComponent"
+        },
+        {
+            "file": "src/component/TranslateComponent.js",
+            "line": 12,
+            "description": "Método construtor da classe TranslateComponent.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "initialize",
+            "params": [
+                {
+                    "name": "x",
+                    "description": "",
+                    "type": "Float"
+                },
+                {
+                    "name": "y",
+                    "description": "",
+                    "type": "Float"
+                }
+            ],
+            "return": {
+                "description": "object",
+                "type": "TranslateComponent"
+            },
+            "class": "TranslateComponent"
+        },
+        {
+            "file": "src/component/TranslateComponent.js",
+            "line": 29,
+            "description": "Retorna os sistemas que deverão gerenciar este component.\n(KEY_SYSTEM; LOGIC_SYSTEM; MOUSE_SYSTEM; RENDER_SYSTEM)",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getSystems",
+            "return": {
+                "description": "systems",
+                "type": "Array"
+            },
+            "class": "TranslateComponent"
+        },
+        {
+            "file": "src/component/TranslateComponent.js",
+            "line": 43,
+            "description": "Define a translação do objeto.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "setTranslate",
+            "params": [
+                {
+                    "name": "x",
+                    "description": "",
+                    "type": "Float"
+                },
+                {
+                    "name": "y",
+                    "description": "",
+                    "type": "Float"
+                }
+            ],
+            "class": "TranslateComponent"
+        },
+        {
+            "file": "src/component/TranslateComponent.js",
+            "line": 67,
+            "description": "Função que realiza a transformação de translação no canvas.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "translate",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Context"
+                }
+            ],
+            "class": "TranslateComponent"
+        },
+        {
+            "file": "src/component/TranslateComponent.js",
+            "line": 82,
+            "description": "Método sobrescrito da classe Component.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "onBeforeRender",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Context"
+                }
+            ],
+            "class": "TranslateComponent"
+        },
+        {
+            "file": "src/component/TranslateComponent.js",
+            "line": 93,
+            "description": "Método sobrescrito da classe Component.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getTag",
+            "return": {
+                "description": "tag",
+                "type": "String"
+            },
+            "class": "TranslateComponent"
+        },
+        {
+            "file": "src/game/Asset.js",
+            "line": 10,
+            "description": "Método construtor da classe Asset.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "initialize",
+            "params": [
+                {
+                    "name": "id",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "path",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "assetType",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "object",
+                "type": "Asset"
+            },
+            "class": "Asset"
+        },
+        {
+            "file": "src/game/Asset.js",
+            "line": 30,
+            "description": "Retorna a instância do asset com base no tipo informado.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getAssetInstance",
+            "return": {
+                "description": "instance",
+                "type": "Object"
+            },
+            "class": "Asset"
+        },
+        {
+            "file": "src/game/Asset.js",
+            "line": 41,
+            "description": "Carrega o asset.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "loadAsset",
+            "class": "Asset"
+        },
+        {
+            "file": "src/game/AssetStore.js",
+            "line": 12,
+            "description": "Retorna um asset do jogo.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getAsset",
+            "params": [
+                {
+                    "name": "id",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "asset",
+                "type": "Asset"
+            },
+            "class": "AssetStore"
+        },
+        {
+            "file": "src/game/AssetStore.js",
+            "line": 27,
+            "description": "Adiciona um asset no jogo.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "addAsset",
+            "params": [
+                {
+                    "name": "asset",
+                    "description": "",
+                    "type": "Asset"
+                }
+            ],
+            "class": "AssetStore"
+        },
+        {
+            "file": "src/game/Camera.js",
+            "line": 10,
+            "description": "Método construtor da classe Camera.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "initialize",
+            "params": [
+                {
+                    "name": "x",
+                    "description": "",
+                    "type": "Float"
+                },
+                {
+                    "name": "y",
+                    "description": "",
+                    "type": "Float"
+                }
+            ],
+            "return": {
+                "description": "object",
+                "type": "Camera"
+            },
+            "class": "Camera"
+        },
+        {
+            "file": "src/game/Camera.js",
+            "line": 32,
+            "description": "Função que defini a escala da câmera.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "setScale",
+            "params": [
+                {
+                    "name": "x",
+                    "description": "",
+                    "type": "Float"
+                },
+                {
+                    "name": "y",
+                    "description": "",
+                    "type": "Float"
+                }
+            ],
+            "class": "Camera"
+        },
+        {
+            "file": "src/game/Camera.js",
+            "line": 45,
+            "description": "Função que defini a translação da câmera.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "setTranslate",
+            "params": [
+                {
+                    "name": "x",
+                    "description": "",
+                    "type": "Float"
+                },
+                {
+                    "name": "y",
+                    "description": "",
+                    "type": "Float"
+                }
+            ],
+            "class": "Camera"
+        },
+        {
+            "file": "src/game/Camera.js",
+            "line": 58,
+            "description": "Função que retorna o x central da câmera.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getCenterX",
+            "return": {
+                "description": "centerX",
+                "type": "Float"
+            },
+            "class": "Camera"
+        },
+        {
+            "file": "src/game/Camera.js",
+            "line": 69,
+            "description": "Função que retorna o y central da câmera.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getCenterY",
+            "return": {
+                "description": "centerY",
+                "type": "Float"
+            },
+            "class": "Camera"
+        },
+        {
+            "file": "src/game/Camera.js",
+            "line": 80,
+            "description": "Função que retorna o ângulo da câmera.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getAngle",
+            "return": {
+                "description": "angle",
+                "type": "Float"
+            },
+            "class": "Camera"
+        },
+        {
+            "file": "src/game/Game.js",
+            "line": 21,
+            "description": "Método que inicializa o jogo.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "init",
+            "params": [
+                {
+                    "name": "canvas",
+                    "description": "",
+                    "type": "Canvas"
+                },
+                {
+                    "name": "scene",
+                    "description": "",
+                    "type": "Scene"
+                }
+            ],
+            "class": "Game"
+        },
+        {
+            "file": "src/game/Game.js",
+            "line": 42,
+            "description": "Executa o onLoad dos componentes do jogo.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "loadGame",
+            "class": "Game"
+        },
+        {
+            "file": "src/game/Game.js",
+            "line": 57,
+            "description": "Inicia o loop principal do jogo.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "startGameLoop",
+            "class": "Game"
+        },
+        {
+            "file": "src/game/Game.js",
+            "line": 91,
+            "description": "Para o Loop principal do jogo.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "stopGame",
+            "class": "Game"
+        },
+        {
+            "file": "src/game/Game.js",
+            "line": 110,
+            "description": "Loop principal do jogo.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "gameLoop",
+            "class": "Game"
+        },
+        {
+            "file": "src/game/Game.js",
+            "line": 126,
+            "description": "Chama o onUpdate dos componentes do jogo.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "updateGame",
+            "params": [
+                {
+                    "name": "deltaTima",
+                    "description": "",
+                    "type": "Float"
+                }
+            ],
+            "class": "Game"
+        },
+        {
+            "file": "src/game/Game.js",
+            "line": 137,
+            "description": "Realiza as verficiações do mundo da Box2D\ne dispara o evento de onCollide dos objetos\ndo jogo.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "stepGame",
+            "class": "Game"
+        },
+        {
+            "file": "src/game/Game.js",
+            "line": 155,
+            "description": "Dispara o onRender dos componentes do jogo.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "renderGame",
+            "class": "Game"
+        },
+        {
+            "file": "src/game/Game.js",
+            "line": 165,
+            "description": "Seta a cena atual.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "setScene",
+            "class": "Game"
+        },
+        {
+            "file": "src/game/Game.js",
+            "line": 176,
+            "description": "Carrega a cena atual.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "loadScene",
+            "class": "Game"
+        },
+        {
+            "file": "src/game/Layer.js",
+            "line": 10,
+            "description": "Método construtor da classe Layer.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "initialize",
+            "return": {
+                "description": "object",
+                "type": "Layer"
+            },
+            "class": "Layer"
+        },
+        {
+            "file": "src/game/Layer.js",
+            "line": 30,
+            "description": "Faz uma query no mundo da Box2D e retorna os \nobjetos selecionados.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "queryGameObjects",
+            "params": [
+                {
+                    "name": "x",
+                    "description": "",
+                    "type": "Float"
+                },
+                {
+                    "name": "y",
+                    "description": "",
+                    "type": "Float"
+                },
+                {
+                    "name": "w",
+                    "description": "",
+                    "type": "Float"
+                },
+                {
+                    "name": "h",
+                    "description": "",
+                    "type": "Float"
+                },
+                {
+                    "name": "max",
+                    "description": "",
+                    "type": "Float"
+                }
+            ],
+            "return": {
+                "description": "gameObjects",
+                "type": "Array"
+            },
+            "class": "Layer"
+        },
+        {
+            "file": "src/game/Layer.js",
+            "line": 60,
+            "description": "Muda a gravidade do mundo da Box2D.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "setGravity",
+            "params": [
+                {
+                    "name": "gravity",
+                    "description": "",
+                    "type": "Float"
+                }
+            ],
+            "class": "Layer"
+        },
+        {
+            "file": "src/game/Layer.js",
+            "line": 87,
+            "description": "Adicona um objeto na camada.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "addGameObject",
+            "params": [
+                {
+                    "name": "gameObject",
+                    "description": "",
+                    "type": "GameObject"
+                }
+            ],
+            "class": "Layer"
+        },
+        {
+            "file": "src/game/Layer.js",
+            "line": 102,
+            "description": "Remove um objeto da camada.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "removeGameObject",
+            "params": [
+                {
+                    "name": "gameObject",
+                    "description": "",
+                    "type": "GameObject"
+                }
+            ],
+            "class": "Layer"
+        },
+        {
+            "file": "src/game/Layer.js",
+            "line": 113,
+            "description": "Callback chamado quando a camada é carregada.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "onLoad",
+            "class": "Layer"
+        },
+        {
+            "file": "src/game/Scene.js",
+            "line": 10,
+            "description": "Método construtor da classe Scene.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "initialize",
+            "params": [
+                {
+                    "name": "minX",
+                    "description": "",
+                    "type": "Float"
+                },
+                {
+                    "name": "minY",
+                    "description": "",
+                    "type": "Float"
+                },
+                {
+                    "name": "maxX",
+                    "description": "",
+                    "type": "Float"
+                },
+                {
+                    "name": "maxY",
+                    "description": "",
+                    "type": "Float"
+                }
+            ],
+            "return": {
+                "description": "object",
+                "type": "Scene"
+            },
+            "class": "Scene"
+        },
+        {
+            "file": "src/game/Scene.js",
+            "line": 32,
+            "description": "Adicona uma camada na cena.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "addLayer",
+            "params": [
+                {
+                    "name": "layer",
+                    "description": "",
+                    "type": "Layer"
+                }
+            ],
+            "class": "Scene"
+        },
+        {
+            "file": "src/game/Scene.js",
+            "line": 44,
+            "description": "Remove uma camada da cena.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "removeLayer",
+            "params": [
+                {
+                    "name": "layer",
+                    "description": "",
+                    "type": "Layer"
+                }
+            ],
+            "class": "Scene"
+        },
+        {
+            "file": "src/game/Scene.js",
+            "line": 55,
+            "description": "Callback chamado quando a cena é carregada.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "onLoad",
+            "class": "Scene"
+        },
+        {
+            "file": "src/gameobject/BoxObject.js",
+            "line": 12,
+            "description": "Método construtor da classe BoxObject.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "initialize",
+            "params": [
+                {
+                    "name": "x",
+                    "description": "",
+                    "type": "Float"
+                },
+                {
+                    "name": "y",
+                    "description": "",
+                    "type": "Float"
+                },
+                {
+                    "name": "width",
+                    "description": "",
+                    "type": "Float"
+                },
+                {
+                    "name": "height",
+                    "description": "",
+                    "type": "Float"
+                },
+                {
+                    "name": "fillStyle",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "fillStroke",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "object",
+                "type": "BoxObject"
+            },
+            "class": "BoxObject"
+        },
+        {
+            "file": "src/gameobject/BoxObject.js",
+            "line": 36,
+            "description": "Cria o formato do corpo para a Box2D.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "createBodyShape",
+            "return": {
+                "description": "bodyShape",
+                "type": "B2ShapeDef"
+            },
+            "class": "BoxObject"
+        },
+        {
+            "file": "src/gameobject/BoxObject.js",
+            "line": 56,
+            "description": "Retorna a tag deste objeto.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getTag",
+            "return": {
+                "description": "tag",
+                "type": "String"
+            },
+            "class": "BoxObject"
+        },
+        {
+            "file": "src/gameobject/CircleObject.js",
+            "line": 12,
+            "description": "Método construtor da classe CircleObject.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "initialize",
+            "params": [
+                {
+                    "name": "x",
+                    "description": "",
+                    "type": "Float"
+                },
+                {
+                    "name": "y",
+                    "description": "",
+                    "type": "Float"
+                },
+                {
+                    "name": "radius",
+                    "description": "",
+                    "type": "Float"
+                },
+                {
+                    "name": "fillStyle",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "fillStroke",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "object",
+                "type": "CircleObject"
+            },
+            "class": "CircleObject"
+        },
+        {
+            "file": "src/gameobject/CircleObject.js",
+            "line": 36,
+            "description": "Cria o formato do corpo para a Box2D.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "createBodyShape",
+            "return": {
+                "description": "bodyShape",
+                "type": "B2ShapeDef"
+            },
+            "class": "CircleObject"
+        },
+        {
+            "file": "src/gameobject/CircleObject.js",
+            "line": 54,
+            "description": "Retorna o raio da circunferência.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getRadius",
+            "return": {
+                "description": "radius",
+                "type": "Float"
+            },
+            "class": "CircleObject"
+        },
+        {
+            "file": "src/gameobject/CircleObject.js",
+            "line": 65,
+            "description": "Retorna a tag deste objeto.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getTag",
+            "return": {
+                "description": "tag",
+                "type": "String"
+            },
+            "class": "CircleObject"
+        },
+        {
+            "file": "src/gameobject/GameObject.js",
+            "line": 10,
+            "description": "Método construtor da classe GameObject.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "initialize",
+            "params": [
+                {
+                    "name": "x",
+                    "description": "",
+                    "type": "Float"
+                },
+                {
+                    "name": "y",
+                    "description": "",
+                    "type": "Float"
+                },
+                {
+                    "name": "width",
+                    "description": "",
+                    "type": "Float"
+                },
+                {
+                    "name": "height",
+                    "description": "",
+                    "type": "Float"
+                }
+            ],
+            "return": {
+                "description": "object",
+                "type": "GameObject"
+            },
+            "class": "GameObject"
+        },
+        {
+            "file": "src/gameobject/GameObject.js",
+            "line": 34,
+            "description": "Método executado quando o GameObject\né carregado na cena.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "onLoad",
+            "class": "GameObject"
+        },
+        {
+            "file": "src/gameobject/GameObject.js",
+            "line": 43,
+            "description": "Retorna a largura do objeto.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getWidth",
+            "return": {
+                "description": "width",
+                "type": "Float"
+            },
+            "class": "GameObject"
+        },
+        {
+            "file": "src/gameobject/GameObject.js",
+            "line": 57,
+            "description": "Retorna a altura do objeto.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getHeight",
+            "return": {
+                "description": "height",
+                "type": "Float"
+            },
+            "class": "GameObject"
+        },
+        {
+            "file": "src/gameobject/GameObject.js",
+            "line": 71,
+            "description": "Retorna o x central do objeto.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getCenterX",
+            "return": {
+                "description": "centerX",
+                "type": "Float"
+            },
+            "class": "GameObject"
+        },
+        {
+            "file": "src/gameobject/GameObject.js",
+            "line": 88,
+            "description": "Retorna o y central do objeto.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getCenterY",
+            "return": {
+                "description": "centerY",
+                "type": "Float"
+            },
+            "class": "GameObject"
+        },
+        {
+            "file": "src/gameobject/GameObject.js",
+            "line": 105,
+            "description": "Incrementa a posição do objeto.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "addMove",
+            "params": [
+                {
+                    "name": "x",
+                    "description": "",
+                    "type": "Float"
+                },
+                {
+                    "name": "y",
+                    "description": "",
+                    "type": "Float"
+                }
+            ],
+            "class": "GameObject"
+        },
+        {
+            "file": "src/gameobject/GameObject.js",
+            "line": 128,
+            "description": "Define a velocidade linear do objeto em x.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "setLinearVelocityX",
+            "params": [
+                {
+                    "name": "x",
+                    "description": "",
+                    "type": "Float"
+                }
+            ],
+            "class": "GameObject"
+        },
+        {
+            "file": "src/gameobject/GameObject.js",
+            "line": 147,
+            "description": "Define a velocidade linear do objeto em y.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "setLinearVelocityY",
+            "params": [
+                {
+                    "name": "y",
+                    "description": "",
+                    "type": "Float"
+                }
+            ],
+            "class": "GameObject"
+        },
+        {
+            "file": "src/gameobject/GameObject.js",
+            "line": 166,
+            "description": "Retorna o ângulo do objeto.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getAngle",
+            "return": {
+                "description": "angle",
+                "type": "Float"
+            },
+            "class": "GameObject"
+        },
+        {
+            "file": "src/gameobject/GameObject.js",
+            "line": 187,
+            "description": "Cria a definição do corpo para a Box2D.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "createBodyDef",
+            "params": [
+                {
+                    "name": "x",
+                    "description": "",
+                    "type": "Float"
+                },
+                {
+                    "name": "y",
+                    "description": "",
+                    "type": "Float"
+                }
+            ],
+            "return": {
+                "description": "bodyDefinition",
+                "type": "B2BodyDef"
+            },
+            "class": "GameObject"
+        },
+        {
+            "file": "src/gameobject/GameObject.js",
+            "line": 203,
+            "description": "Remove o GameObject do jogo.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "destroy",
+            "class": "GameObject"
+        },
+        {
+            "file": "src/gameobject/GameObject.js",
+            "line": 219,
+            "description": "Cria o formato do corpo para a Box2D.\nEste método deve ser sobrescrito nas subclasses.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "createBodyShape",
+            "return": {
+                "description": "bodyShape",
+                "type": "B2ShapeDef"
+            },
+            "class": "GameObject"
+        },
+        {
+            "file": "src/gameobject/GameObject.js",
+            "line": 229,
+            "description": "Retorna a tag deste objeto.\nEste método deve ser sobrescrito nas subclasses.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getTag",
+            "return": {
+                "description": "tag",
+                "type": "String"
+            },
+            "class": "GameObject"
+        },
+        {
+            "file": "src/gameobject/PolygonObject.js",
+            "line": 12,
+            "description": "Método construtor da classe PolygonObject.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "initialize",
+            "params": [
+                {
+                    "name": "x",
+                    "description": "",
+                    "type": "Float"
+                },
+                {
+                    "name": "y",
+                    "description": "",
+                    "type": "Float"
+                },
+                {
+                    "name": "points",
+                    "description": "",
+                    "type": "Array<Point2D>"
+                },
+                {
+                    "name": "fillStyle",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "fillStroke",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "object",
+                "type": "PolygonObject"
+            },
+            "class": "PolygonObject"
+        },
+        {
+            "file": "src/gameobject/PolygonObject.js",
+            "line": 36,
+            "description": "Cria o formato do corpo para a Box2D.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "createBodyShape",
+            "return": {
+                "description": "bodyShape",
+                "type": "B2ShapeDef"
+            },
+            "class": "PolygonObject"
+        },
+        {
+            "file": "src/gameobject/PolygonObject.js",
+            "line": 59,
+            "description": "Retorna os pontos do polígono.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getPoints",
+            "return": {
+                "description": "radius",
+                "type": "Array<Point2D>"
+            },
+            "class": "PolygonObject"
+        },
+        {
+            "file": "src/gameobject/PolygonObject.js",
+            "line": 79,
+            "description": "Retorna a tag deste objeto.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getTag",
+            "return": {
+                "description": "tag",
+                "type": "String"
+            },
+            "class": "PolygonObject"
+        },
+        {
+            "file": "src/geometric/Point2D.js",
+            "line": 10,
+            "description": "Método construtor da classe Point2D.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "initialize",
+            "params": [
+                {
+                    "name": "x",
+                    "description": "",
+                    "type": "Float"
+                },
+                {
+                    "name": "y",
+                    "description": "",
+                    "type": "Float"
+                }
+            ],
+            "return": {
+                "description": "object",
+                "type": "Point2D"
+            },
+            "class": "Point2D"
+        },
+        {
+            "file": "src/geometric/Point2D.js",
+            "line": 27,
+            "description": "Exibe as informações do objeto em forma textual.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "toString",
+            "return": {
+                "description": "objectString",
+                "type": "String"
+            },
+            "class": "Point2D"
+        },
+        {
+            "file": "src/system/KeySystem.js",
+            "line": 10,
+            "description": "Método usado para propagar o evento de keydown.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "fireKeyDownListener",
+            "static": 1,
+            "params": [
+                {
+                    "name": "evt",
+                    "description": "",
+                    "type": "Event"
+                }
+            ],
+            "class": "KeySystem"
+        },
+        {
+            "file": "src/system/KeySystem.js",
+            "line": 57,
+            "description": "Método usado para propagar o evento de keyup.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "fireKeyUpListener",
+            "static": 1,
+            "params": [
+                {
+                    "name": "evt",
+                    "description": "",
+                    "type": "Event"
+                }
+            ],
+            "class": "KeySystem"
+        },
+        {
+            "file": "src/system/KeySystem.js",
+            "line": 104,
+            "description": "Retorna o tipo do sistema.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getTag",
+            "static": 1,
+            "return": {
+                "description": "tag",
+                "type": "String"
+            },
+            "class": "KeySystem"
+        },
+        {
+            "file": "src/system/LogicSystem.js",
+            "line": 12,
+            "description": "Método usado para propagar o evento de update.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "fireUpdateListener",
+            "params": [
+                {
+                    "name": "deltaTime",
+                    "description": "",
+                    "type": "Float"
+                }
+            ],
+            "static": 1,
+            "class": "LogicSystem"
+        },
+        {
+            "file": "src/system/LogicSystem.js",
+            "line": 57,
+            "description": "Método usado para propagar o evento de collide.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "fireCollideListener",
+            "static": 1,
+            "class": "LogicSystem"
+        },
+        {
+            "file": "src/system/LogicSystem.js",
+            "line": 85,
+            "description": "Método usado para guardar uma colisão detectada pela Box2D.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "putCollideInfo",
+            "static": 1,
+            "params": [
+                {
+                    "name": "gameObject1",
+                    "description": "",
+                    "type": "GameObject"
+                },
+                {
+                    "name": "gameObject2",
+                    "description": "",
+                    "type": "GameObject"
+                }
+            ],
+            "class": "LogicSystem"
+        },
+        {
+            "file": "src/system/LogicSystem.js",
+            "line": 109,
+            "description": "Método usado gerar uma chave com base nos objetos colididos.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getCollideKey",
+            "static": 1,
+            "params": [
+                {
+                    "name": "gameObject1",
+                    "description": "",
+                    "type": "GameObject"
+                },
+                {
+                    "name": "gameObject2",
+                    "description": "",
+                    "type": "GameObject"
+                }
+            ],
+            "return": {
+                "description": "key",
+                "type": "String"
+            },
+            "class": "LogicSystem"
+        },
+        {
+            "file": "src/system/LogicSystem.js",
+            "line": 123,
+            "description": "Método usado para limpar a lista de colisões.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "clearCollideInfo",
+            "static": 1,
+            "class": "LogicSystem"
+        },
+        {
+            "file": "src/system/LogicSystem.js",
+            "line": 134,
+            "description": "Retorna o tipo do sistema.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getTag",
+            "static": 1,
+            "return": {
+                "description": "tag",
+                "type": "String"
+            },
+            "class": "LogicSystem"
+        },
+        {
+            "file": "src/system/MouseSystem.js",
+            "line": 10,
+            "description": "Método que normaliza a coordenada com base nas\ntransformações da câmera setada no jogo.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getNormalizedCoordinate",
+            "static": 1,
+            "params": [
+                {
+                    "name": "x",
+                    "description": "",
+                    "type": "Float"
+                },
+                {
+                    "name": "y",
+                    "description": "",
+                    "type": "Float"
+                }
+            ],
+            "return": {
+                "description": "normalizedCoordinate",
+                "type": "Point2D"
+            },
+            "class": "MouseSystem"
+        },
+        {
+            "file": "src/system/MouseSystem.js",
+            "line": 53,
+            "description": "Método usado para propagar o evento de click.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "fireClickListener",
+            "static": 1,
+            "params": [
+                {
+                    "name": "evt",
+                    "description": "",
+                    "type": "Event"
+                }
+            ],
+            "class": "MouseSystem"
+        },
+        {
+            "file": "src/system/MouseSystem.js",
+            "line": 105,
+            "description": "Método usado para propagar o evento de mousedown.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "fireMouseDownListener",
+            "static": 1,
+            "params": [
+                {
+                    "name": "evt",
+                    "description": "",
+                    "type": "Event"
+                }
+            ],
+            "class": "MouseSystem"
+        },
+        {
+            "file": "src/system/MouseSystem.js",
+            "line": 165,
+            "description": "Método usado para propagar o evento de mouseup.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "fireMouseUpListener",
+            "static": 1,
+            "params": [
+                {
+                    "name": "evt",
+                    "description": "",
+                    "type": "Event"
+                }
+            ],
+            "class": "MouseSystem"
+        },
+        {
+            "file": "src/system/MouseSystem.js",
+            "line": 225,
+            "description": "Método usado para propagar o evento de mousemove.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "fireMouseMoveListener",
+            "static": 1,
+            "params": [
+                {
+                    "name": "evt",
+                    "description": "",
+                    "type": "Event"
+                }
+            ],
+            "class": "MouseSystem"
+        },
+        {
+            "file": "src/system/MouseSystem.js",
+            "line": 283,
+            "description": "Retorna o tipo do sistema.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getTag",
+            "static": 1,
+            "return": {
+                "description": "tag",
+                "type": "String"
+            },
+            "class": "MouseSystem"
+        },
+        {
+            "file": "src/system/RenderSystem.js",
+            "line": 10,
+            "description": "Método usado para propagar o evento de render.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "fireRenderListener",
+            "static": 1,
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Context"
+                }
+            ],
+            "class": "RenderSystem"
+        },
+        {
+            "file": "src/system/RenderSystem.js",
+            "line": 99,
+            "description": "Retorna o tipo do sistema.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getTag",
+            "static": 1,
+            "return": {
+                "description": "tag",
+                "type": "String"
+            },
+            "class": "RenderSystem"
+        },
+        {
+            "file": "src/utils/ArrayUtils.js",
+            "line": 10,
+            "description": "Método usado para adicionar um objeto a um Array\nindexado por uma chave.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "putElement",
+            "static": 1,
+            "params": [
+                {
+                    "name": "array",
+                    "description": "",
+                    "type": "Array"
+                },
+                {
+                    "name": "key",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "element",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "array",
+                "type": "Array"
+            },
+            "class": "ArrayUtils"
+        },
+        {
+            "file": "src/utils/ArrayUtils.js",
+            "line": 27,
+            "description": "Método usado para remove um elemento do array pela chave.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "removeElementByKey",
+            "static": 1,
+            "params": [
+                {
+                    "name": "array",
+                    "description": "",
+                    "type": "Array"
+                },
+                {
+                    "name": "key",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "array",
+                "type": "Array"
+            },
+            "class": "ArrayUtils"
+        },
+        {
+            "file": "src/utils/ArrayUtils.js",
+            "line": 42,
+            "description": "Retorna o objeto do array indexado pela chave.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getElementByKey",
+            "static": 1,
+            "params": [
+                {
+                    "name": "array",
+                    "description": "",
+                    "type": "Array"
+                },
+                {
+                    "name": "key",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "object",
+                "type": "Object"
+            },
+            "class": "ArrayUtils"
+        },
+        {
+            "file": "src/utils/ArrayUtils.js",
+            "line": 56,
+            "description": "Método usado para adicionar um objeto a um Array.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "addElement",
+            "static": 1,
+            "params": [
+                {
+                    "name": "array",
+                    "description": "",
+                    "type": "Array"
+                },
+                {
+                    "name": "element",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "array",
+                "type": "Array"
+            },
+            "class": "ArrayUtils"
+        },
+        {
+            "file": "src/utils/ArrayUtils.js",
+            "line": 71,
+            "description": "Método usado para remover um objeto de um Array.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "removeElement",
+            "static": 1,
+            "params": [
+                {
+                    "name": "array",
+                    "description": "",
+                    "type": "Array"
+                },
+                {
+                    "name": "element",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "array",
+                "type": "Array"
+            },
+            "class": "ArrayUtils"
+        },
+        {
+            "file": "src/utils/ArrayUtils.js",
+            "line": 93,
+            "description": "Método usado para retornar um objeto de um Array.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getElement",
+            "static": 1,
+            "params": [
+                {
+                    "name": "array",
+                    "description": "",
+                    "type": "Array"
+                },
+                {
+                    "name": "id",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "element",
+                "type": "Object"
+            },
+            "class": "ArrayUtils"
+        },
+        {
+            "file": "src/utils/ArrayUtils.js",
+            "line": 113,
+            "description": "Método usado para retornar o index de um elemento em um Array.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getIndexOf",
+            "static": 1,
+            "params": [
+                {
+                    "name": "array",
+                    "description": "",
+                    "type": "Array"
+                },
+                {
+                    "name": "element",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "index",
+                "type": "Integer"
+            },
+            "class": "ArrayUtils"
+        },
+        {
+            "file": "src/utils/ArrayUtils.js",
+            "line": 133,
+            "description": "Método usado para verificar se um elemento está contido em um Array.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "contains",
+            "static": 1,
+            "params": [
+                {
+                    "name": "array",
+                    "description": "",
+                    "type": "Array"
+                },
+                {
+                    "name": "element",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "contains",
+                "type": "Boolean"
+            },
+            "class": "ArrayUtils"
+        },
+        {
+            "file": "src/utils/ComponentUtils.js",
+            "line": 10,
+            "description": "Método usado para adicionar um novo\ncomponente a um objeto.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "addComponent",
+            "static": 1,
+            "params": [
+                {
+                    "name": "object",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "component",
+                    "description": "",
+                    "type": "Component"
+                }
+            ],
+            "class": "ComponentUtils"
+        },
+        {
+            "file": "src/utils/ComponentUtils.js",
+            "line": 28,
+            "description": "Método usado para remover um\ncomponente de um objeto.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "removeComponent",
+            "static": 1,
+            "params": [
+                {
+                    "name": "object",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "component",
+                    "description": "",
+                    "type": "Component"
+                }
+            ],
+            "class": "ComponentUtils"
+        },
+        {
+            "file": "src/utils/ComponentUtils.js",
+            "line": 44,
+            "description": "Método usado para recuperar \num componente de um objeto.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "getComponent",
+            "static": 1,
+            "params": [
+                {
+                    "name": "object",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "tag",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "component",
+                "type": "Component"
+            },
+            "class": "ComponentUtils"
+        },
+        {
+            "file": "src/utils/JSUtils.js",
+            "line": 10,
+            "description": "Método usado para sobrecarga de funções Javascript.\nBy John Resig (MIT Licensed)",
+            "author": "John Resig",
+            "itemtype": "method",
+            "name": "addMethod",
+            "static": 1,
+            "params": [
+                {
+                    "name": "object",
+                    "description": "",
+                    "type": "Prototype"
+                },
+                {
+                    "name": "name",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "fn",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "function",
+                "type": "Function"
+            },
+            "class": "JSUtils"
+        },
+        {
+            "file": "src/utils/JSUtils.js",
+            "line": 35,
+            "description": "Método usado gerar um id universal único.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "generateUUID",
+            "static": 1,
+            "return": {
+                "description": "uuid",
+                "type": "String"
+            },
+            "class": "JSUtils"
+        },
+        {
+            "file": "src/utils/StringUtils.js",
+            "line": 10,
+            "description": "Método usado substituir todas as ocorrências de um token \nem uma string.",
+            "author": "Marcos Harbs",
+            "itemtype": "method",
+            "name": "replaceAll",
+            "static": 1,
+            "params": [
+                {
+                    "name": "string",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "token",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "newToken",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "string",
+                "type": "String"
+            },
+            "class": "StringUtils"
+        }
+    ],
+    "warnings": []
+}

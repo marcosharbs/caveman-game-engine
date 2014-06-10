@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>src/system/MouseSystem.js</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            
+                <h1><img src="../assets/css/logo.png" title=""></h1>
+            
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: </em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="../classes/AnimationRenderComponent.html">AnimationRenderComponent</a></li>
+            
+                <li><a href="../classes/ArrayUtils.html">ArrayUtils</a></li>
+            
+                <li><a href="../classes/Asset.html">Asset</a></li>
+            
+                <li><a href="../classes/AssetStore.html">AssetStore</a></li>
+            
+                <li><a href="../classes/BoxObject.html">BoxObject</a></li>
+            
+                <li><a href="../classes/BoxRenderComponent.html">BoxRenderComponent</a></li>
+            
+                <li><a href="../classes/Camera.html">Camera</a></li>
+            
+                <li><a href="../classes/CircleObject.html">CircleObject</a></li>
+            
+                <li><a href="../classes/CircleRenderComponent.html">CircleRenderComponent</a></li>
+            
+                <li><a href="../classes/CollideInfo.html">CollideInfo</a></li>
+            
+                <li><a href="../classes/Component.html">Component</a></li>
+            
+                <li><a href="../classes/ComponentUtils.html">ComponentUtils</a></li>
+            
+                <li><a href="../classes/FpsMeterComponent.html">FpsMeterComponent</a></li>
+            
+                <li><a href="../classes/Game.html">Game</a></li>
+            
+                <li><a href="../classes/GameObject.html">GameObject</a></li>
+            
+                <li><a href="../classes/ImageRenderComponent.html">ImageRenderComponent</a></li>
+            
+                <li><a href="../classes/JSUtils.html">JSUtils</a></li>
+            
+                <li><a href="../classes/KeySystem.html">KeySystem</a></li>
+            
+                <li><a href="../classes/Layer.html">Layer</a></li>
+            
+                <li><a href="../classes/LogicSystem.html">LogicSystem</a></li>
+            
+                <li><a href="../classes/MouseSystem.html">MouseSystem</a></li>
+            
+                <li><a href="../classes/MoveCameraComponent.html">MoveCameraComponent</a></li>
+            
+                <li><a href="../classes/Point2D.html">Point2D</a></li>
+            
+                <li><a href="../classes/PolygonObject.html">PolygonObject</a></li>
+            
+                <li><a href="../classes/PolygonRenderComponent.html">PolygonRenderComponent</a></li>
+            
+                <li><a href="../classes/RenderSystem.html">RenderSystem</a></li>
+            
+                <li><a href="../classes/RigidBodyComponent.html">RigidBodyComponent</a></li>
+            
+                <li><a href="../classes/RotateComponent.html">RotateComponent</a></li>
+            
+                <li><a href="../classes/ScaleComponent.html">ScaleComponent</a></li>
+            
+                <li><a href="../classes/Scene.html">Scene</a></li>
+            
+                <li><a href="../classes/StringUtils.html">StringUtils</a></li>
+            
+                <li><a href="../classes/TranslateComponent.html">TranslateComponent</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: src/system/MouseSystem.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+* Classe responsável por propagar os eventos de mouse.
+*
+* @author Marcos Harbs
+* @class MouseSystem
+* @static
+*/
+var MouseSystem = new function(){
+
+	/**
+	* Método que normaliza a coordenada com base nas
+	* transformações da câmera setada no jogo.
+	*
+	* @author Marcos Harbs
+	* @method getNormalizedCoordinate
+	* @static
+	* @param {Float} x
+	* @param {Float} y
+	* @return {Point2D} normalizedCoordinate
+	*/
+	this.getNormalizedCoordinate = function(x, y){
+		//aplica o deslocamento inverso
+	    x -= -Game.camera.centerPoint.x+(Game.canvas.width/2);
+	    y -= -Game.camera.centerPoint.y+(Game.canvas.height/2);
+
+	    //aplica a escala inversa
+	    x -= Game.camera.centerPoint.x; 
+	    x /= Game.camera.scale.scalePoint.x;
+	    x += Game.camera.centerPoint.x;
+
+	    y -= Game.camera.centerPoint.y; 
+	    y /= Game.camera.scale.scalePoint.y;
+	    y += Game.camera.centerPoint.y;
+
+	    //aplica a translação inversa
+	    x -= Game.camera.translate.translatePoint.x;
+	    y -= Game.camera.translate.translatePoint.y;
+
+	    //aplica a rotação inversa
+	    var sine = Math.sin(-Game.camera.rotate.angle);
+	    var cosine = Math.cos(-Game.camera.rotate.angle);
+	    x -= Game.camera.centerPoint.x;
+	    y -= Game.camera.centerPoint.y;
+	    var xn = x * cosine - y * sine;
+	    var yn = x * sine + y * cosine;
+	    x = xn + Game.camera.centerPoint.x;
+	    y = yn + Game.camera.centerPoint.y;
+
+	    //Retorna o coordenada normalizada
+	    return new Point2D().initialize(x, y);
+	}
+
+	/**
+	* Método usado para propagar o evento de click.
+	*
+	* @author Marcos Harbs
+	* @method fireClickListener
+	* @static
+	* @param {Event} evt
+	*/
+	this.fireClickListener = function(evt){
+
+		var x = evt.offsetX || evt.layerX;
+		var y = evt.offsetY || evt.layerY;
+		var wich = evt.wich;
+
+		for(var i in Game.listComponents){
+			var component = Game.listComponents[i];
+			if(component instanceof Component /*&amp;&amp; ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
+				component.onClick(x, y, wich);
+			}
+		}
+		if(Game.scene){
+			for(var i in Game.scene.listComponents){
+				var component = Game.scene.listComponents[i];
+				if(component instanceof Component /*&amp;&amp; ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
+					component.onClick(x, y, wich);
+				}
+			}
+			for(var i in Game.scene.listLayers){
+				var layer = Game.scene.listLayers[i];
+				if(layer instanceof Layer){
+					for(var j in layer.listComponents){
+						var component = layer.listComponents[j];
+						if(component instanceof Component /*&amp;&amp; ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
+							component.onClick(x, y, wich);
+						}
+					}
+					for(var j in layer.listGameObjects){
+						var gameObject = layer.listGameObjects[j];
+						if(gameObject instanceof GameObject){
+							for(var k in gameObject.listComponents){
+								var component = gameObject.listComponents[k];
+								if(component instanceof Component /*&amp;&amp; ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
+									component.onClick(x, y, wich);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/**
+	* Método usado para propagar o evento de mousedown.
+	*
+	* @author Marcos Harbs
+	* @method fireMouseDownListener
+	* @static
+	* @param {Event} evt
+	*/
+	this.fireMouseDownListener = function(evt){
+		
+		var x = evt.offsetX || evt.layerX;
+		var y = evt.offsetY || evt.layerY;
+		var wich = evt.wich;
+
+		if(evt.targetTouches &amp;&amp; evt.targetTouches.length &gt; 0){
+			evt.preventDefault();
+			var touch = evt.targetTouches[0];
+			x = touch.pageX;
+			y = touch.pageY;
+			wich = 0;
+		}
+
+		for(var i in Game.listComponents){
+			var component = Game.listComponents[i];
+			if(component instanceof Component /*&amp;&amp; ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
+				component.onMouseDown(x, y, wich);
+			}
+		}
+		if(Game.scene){
+			for(var i in Game.scene.listComponents){
+				var component = Game.scene.listComponents[i];
+				if(component instanceof Component /*&amp;&amp; ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
+					component.onMouseDown(x, y, wich);
+				}
+			}
+			for(var i in Game.scene.listLayers){
+				var layer = Game.scene.listLayers[i];
+				if(layer instanceof Layer){
+					for(var j in layer.listComponents){
+						var component = layer.listComponents[j];
+						if(component instanceof Component /*&amp;&amp; ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
+							component.onMouseDown(x, y, wich);
+						}
+					}
+					for(var j in layer.listGameObjects){
+						var gameObject = layer.listGameObjects[j];
+						if(gameObject instanceof GameObject){
+							for(var k in gameObject.listComponents){
+								var component = gameObject.listComponents[k];
+								if(component instanceof Component /*&amp;&amp; ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
+									component.onMouseDown(x, y, wich);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/**
+	* Método usado para propagar o evento de mouseup.
+	*
+	* @author Marcos Harbs
+	* @method fireMouseUpListener
+	* @static
+	* @param {Event} evt
+	*/
+	this.fireMouseUpListener = function(evt){
+
+		var x = evt.offsetX || evt.layerX;
+		var y = evt.offsetY || evt.layerY;
+		var wich = evt.wich;
+
+		if(evt.targetTouches &amp;&amp; evt.targetTouches.length &gt; 0){
+			evt.preventDefault();
+			var touch = evt.targetTouches[0];
+			x = touch.pageX;
+			y = touch.pageY;
+			wich = 0;
+		}
+
+		for(var i in Game.listComponents){
+			var component = Game.listComponents[i];
+			if(component instanceof Component /*&amp;&amp; ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
+				component.onMouseUp(x, y, wich);
+			}
+		}
+		if(Game.scene){
+			for(var i in Game.scene.listComponents){
+				var component = Game.scene.listComponents[i];
+				if(component instanceof Component /*&amp;&amp; ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
+					component.onMouseUp(x, y, wich);
+				}
+			}
+			for(var i in Game.scene.listLayers){
+				var layer = Game.scene.listLayers[i];
+				if(layer instanceof Layer){
+					for(var j in layer.listComponents){
+						var component = layer.listComponents[j];
+						if(component instanceof Component /*&amp;&amp; ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
+							component.onMouseUp(x, y, wich);
+						}
+					}
+					for(var j in layer.listGameObjects){
+						var gameObject = layer.listGameObjects[j];
+						if(gameObject instanceof GameObject){
+							for(var k in gameObject.listComponents){
+								var component = gameObject.listComponents[k];
+								if(component instanceof Component /*&amp;&amp; ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
+									component.onMouseUp(x, y, wich);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/**
+	* Método usado para propagar o evento de mousemove.
+	*
+	* @author Marcos Harbs
+	* @method fireMouseMoveListener
+	* @static
+	* @param {Event} evt
+	*/
+	this.fireMouseMoveListener = function(evt){
+
+		var x = evt.offsetX || evt.layerX;
+		var y = evt.offsetY || evt.layerY;
+
+		if(evt.targetTouches &amp;&amp; evt.targetTouches.length &gt; 0){
+			evt.preventDefault();
+			var touch = evt.targetTouches[0];
+			x = touch.pageX;
+			y = touch.pageY;
+		}
+
+		for(var i in Game.listComponents){
+			var component = Game.listComponents[i];
+			if(component instanceof Component /*&amp;&amp; ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
+				component.onMouseMove(x, y);
+			}
+		}
+		if(Game.scene){
+			for(var i in Game.scene.listComponents){
+				var component = Game.scene.listComponents[i];
+				if(component instanceof Component /*&amp;&amp; ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
+					component.onMouseMove(x, y);
+				}
+			}
+			for(var i in Game.scene.listLayers){
+				var layer = Game.scene.listLayers[i];
+				if(layer instanceof Layer){
+					for(var j in layer.listComponents){
+						var component = layer.listComponents[j];
+						if(component instanceof Component /*&amp;&amp; ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
+							component.onMouseMove(x, y);
+						}
+					}
+					for(var j in layer.listGameObjects){
+						var gameObject = layer.listGameObjects[j];
+						if(gameObject instanceof GameObject){
+							for(var k in gameObject.listComponents){
+								var component = gameObject.listComponents[k];
+								if(component instanceof Component /*&amp;&amp; ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
+									component.onMouseMove(x, y);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/**
+	* Retorna o tipo do sistema.
+	*
+	* @author Marcos Harbs
+	* @method getTag
+	* @static
+	* @return {String} tag
+	*/
+	this.getTag = function(){
+		return &quot;MOUSE_SYSTEM&quot;;
+	}
+
+}
+
+window.addEventListener(&quot;click&quot;,      MouseSystem.fireClickListener);
+window.addEventListener(&quot;mousedown&quot;,  MouseSystem.fireMouseDownListener);
+window.addEventListener(&quot;mouseup&quot;,    MouseSystem.fireMouseUpListener);
+window.addEventListener(&quot;mousemove&quot;,  MouseSystem.fireMouseMoveListener);
+window.addEventListener(&quot;touchstart&quot;, MouseSystem.fireMouseDownListener);
+window.addEventListener(&quot;touchmove&quot;,  MouseSystem.fireMouseMoveListener);
+window.addEventListener(&quot;touchend&quot;,   MouseSystem.fireMouseUpListener);
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>
