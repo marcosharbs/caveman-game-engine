@@ -1,0 +1,111 @@
+<html>
+<head>
+<script src="./js/zig.js"></script>
+<script src="./js/prototype-1.6.0.2.js"></script>
+<script src="./js/engine.min.js"></script>
+<script src="./js/FollowCameraComponent.js"></script>
+<script src="./js/MarioMoveComponent.js"></script>
+<script src="./js/StarBoxObject.js"></script>
+<script type="text/javascript">
+AssetStore.addAsset(new Asset().initialize("casco", "./assets/casco.png", "IMAGE"));
+AssetStore.addAsset(new Asset().initialize("mario-background", "./assets/mario-background.png", "IMAGE"));
+AssetStore.addAsset(new Asset().initialize("mario-chao", "./assets/mario-chao.png", "IMAGE"));
+AssetStore.addAsset(new Asset().initialize("mario-star-box", "./assets/mario-star-box.png", "IMAGE"));
+AssetStore.addAsset(new Asset().initialize("mario-subchao", "./assets/mario-subchao.png", "IMAGE"));
+AssetStore.addAsset(new Asset().initialize("mario-tunel", "./assets/mario-tunel.png", "IMAGE"));
+AssetStore.addAsset(new Asset().initialize("mario", "./assets/mario.png", "IMAGE"));
+
+var imageBackground = new ImageRenderComponent().initialize(AssetStore.getAsset("mario-background").getAssetInstance(), true, "HORIZONTAL");
+var imageSubSolo = new ImageRenderComponent().initialize(AssetStore.getAsset("mario-subchao").getAssetInstance(), true, "HORIZONTAL");
+var imageSubSoloe2 = new ImageRenderComponent().initialize(AssetStore.getAsset("mario-subchao").getAssetInstance(), true, "HORIZONTAL");
+var chaoImage = new ImageRenderComponent().initialize(AssetStore.getAsset("mario-chao").getAssetInstance(), true, "HORIZONTAL");
+var rigidBodyChao = new RigidBodyComponent().initialize(0,0,false,true,0.2);
+var imageTunelUm = new ImageRenderComponent().initialize(AssetStore.getAsset("mario-tunel").getAssetInstance(), false, "HORIZONTAL");
+var rigidBodyTunelUm = new RigidBodyComponent().initialize(0,0,false,true,0.2);
+var marioPlayerMoveComponent = new MarioMoveComponent().initialize();
+var rigidBodyMario = new RigidBodyComponent().initialize(0,1,true,false,0.2);
+var marioAnimation = new AnimationRenderComponent().initialize(  AssetStore.getAsset("mario").getAssetInstance(), 12, 4);
+var followMario = new FollowCameraComponent().initialize();
+var imageCasco = new ImageRenderComponent().initialize(AssetStore.getAsset("casco").getAssetInstance(), false, "HORIZONTAL");
+var rigidBodyCasco = new RigidBodyComponent().initialize(0,1,true,false,0.1);
+var gameFpsMeter = new FpsMeterComponent().initialize();
+var moveGameCamera = new MoveCameraComponent().initialize(65, 68, 87, 83, 33, 34, 72, 75, 20, 0.1, 5);
+var backgroundObject = new BoxObject().initialize(0, 265, 5110, 430, "red", "red");
+var subSoloObject = new BoxObject().initialize(0, 535, 1420, 34, "red", "red");
+var subSoloObjectDois = new BoxObject().initialize(0, 560, 1420, 34, "red", "red");
+var chaoCena = new BoxObject().initialize(0, 500, 1420, 43, "red", "black");
+var tunelUm = new BoxObject().initialize(450, 463, 32, 32, "red", "red");
+var starBoxUm = new StarBoxObject().initialize(220, 400, 170);
+var marioPlayer = new BoxObject().initialize(200, 450, 20, 30, "red", "red");
+var cascoObject = new BoxObject().initialize(100, 200, 19, 17, "red", "red");
+var starObjectDois = new StarBoxObject().initialize(50, 350, 170);
+var layerBackground = new Layer().initialize();
+var layer = new Layer().initialize();
+var scene = new Scene().initialize(-1000, -1000, 1000, 1000);
+
+ComponentUtils.addComponent(backgroundObject,imageBackground);
+ComponentUtils.addComponent(subSoloObject,imageSubSolo);
+ComponentUtils.addComponent(subSoloObjectDois,imageSubSoloe2);
+ComponentUtils.addComponent(chaoCena,chaoImage);
+ComponentUtils.addComponent(chaoCena,rigidBodyChao);
+ComponentUtils.addComponent(tunelUm,imageTunelUm);
+ComponentUtils.addComponent(tunelUm,rigidBodyTunelUm);
+ComponentUtils.addComponent(marioPlayer,marioPlayerMoveComponent);
+ComponentUtils.addComponent(marioPlayer,rigidBodyMario);
+ComponentUtils.addComponent(marioPlayer,marioAnimation);
+ComponentUtils.addComponent(marioPlayer,followMario);
+ComponentUtils.addComponent(cascoObject,imageCasco);
+ComponentUtils.addComponent(cascoObject,rigidBodyCasco);
+ComponentUtils.addComponent(Game,gameFpsMeter);
+ComponentUtils.addComponent(Game,moveGameCamera);
+
+layerBackground.addGameObject(backgroundObject);
+layerBackground.addGameObject(subSoloObject);
+layerBackground.addGameObject(subSoloObjectDois);
+
+layer.addGameObject(chaoCena);
+layer.addGameObject(tunelUm);
+layer.addGameObject(starBoxUm);
+layer.addGameObject(marioPlayer);
+layer.addGameObject(cascoObject);
+layer.addGameObject(starObjectDois);
+
+scene.addLayer(layerBackground);
+scene.addLayer(layer);
+
+ComponentUtils.removeComponent(backgroundObject, ComponentUtils.getComponent(backgroundObject, "BOX_RENDER_COMPONENT"));ComponentUtils.removeComponent(subSoloObject, ComponentUtils.getComponent(subSoloObject, "BOX_RENDER_COMPONENT"));ComponentUtils.removeComponent(subSoloObjectDois, ComponentUtils.getComponent(subSoloObjectDois, "BOX_RENDER_COMPONENT"));ComponentUtils.removeComponent(tunelUm, ComponentUtils.getComponent(tunelUm, "BOX_RENDER_COMPONENT"));ComponentUtils.removeComponent(marioPlayer, ComponentUtils.getComponent(marioPlayer, "BOX_RENDER_COMPONENT"));
+
+ ComponentUtils.getComponent(marioPlayer, "ANIMATION_RENDER_COMPONENT").play("HORIZONTAL",
+                                                                                 0,
+                                                                                 5,
+                                                                                 6,
+                                                                                 -1,
+                                                                                 150);ComponentUtils.removeComponent(cascoObject, ComponentUtils.getComponent(cascoObject, "BOX_RENDER_COMPONENT"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function createGame(){
+Game.init(document.getElementById("gameCanvas"), scene);
+Game.camera.centerPoint.x = 200; Game.camera.centerPoint.y = 315;
+}
+</script>
+
+</head>
+<body onload="createGame();">
+<canvas id="gameCanvas" width="1024" height="800" style="border: 1px solid black;" />
+</body>
+</html>

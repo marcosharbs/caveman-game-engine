@@ -2,3 +2,4 @@ Editor de código Javascript -> Sublime Text
 Ferrmamenta de documentação de código Javascript -> YUIDoc
 Cliente GIT -> Git Cola
 URL do repositório no GitHub -> https://github.com/marcosharbs/html5-2d-game-engine.git
+Ferramenta para compressão de código Javascript -> UglifyJS2
