@@ -1,2 +1,2 @@
-html5-2d-game-engine
+HTML5 2D GAME ENGINE
 ====================
