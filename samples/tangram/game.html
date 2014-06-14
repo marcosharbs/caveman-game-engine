@@ -1,0 +1,103 @@
+<html>
+<head>
+<script src="./js/engine.min.js"></script>
+<script src="./js/MoveTangramComponent.js"></script>
+<script type="text/javascript">
+AssetStore.addAsset(new Asset().initialize("block", "./assets/block.png", "IMAGE"));
+
+var p1RB = new RigidBodyComponent().initialize(0,1,false,false,0.2);
+var p2RB = new RigidBodyComponent().initialize(0,1,false,false,0.2);
+var p3RB = new RigidBodyComponent().initialize(0,1,false,false,0.2);
+var p4RB = new RigidBodyComponent().initialize(0,1,false,false,0.2);
+var p5RB = new RigidBodyComponent().initialize(0,1,false,false,0.2);
+var p6RB = new RigidBodyComponent().initialize(0,1,false,false,0.2);
+var p7RB = new RigidBodyComponent().initialize(0,1,false,false,0.2);
+var groundRB = new RigidBodyComponent().initialize(0,0,false,true,0.2);
+var groundImg = new ImageRenderComponent().initialize(AssetStore.getAsset("block").getAssetInstance(), true, "HORIZONTAL");
+var fpsMeter = new FpsMeterComponent().initialize();
+var mcc = new MoveCameraComponent().initialize(65, 68, 87, 83, 33, 34, 72, 75, 20, 0.1, 5);
+var mtc = new MoveTangramComponent().initialize();
+var p1 = new PolygonObject().initialize(430, 200, [new Point2D().initialize(-50, 100),
+                                                       new Point2D().initialize(-50, -100),
+                                                       new Point2D().initialize(50, 0)], 
+                                            "purple", "black");
+var p2 = new PolygonObject().initialize(500, 200, [new Point2D().initialize(-100, -50),
+                                                       new Point2D().initialize(100, -50),
+                                                       new Point2D().initialize(0, 50)], 
+                                            "red", "black");
+var p3 = new PolygonObject().initialize(600, 200, [new Point2D().initialize(-25, 0),
+                                                       new Point2D().initialize(25, -50),
+                                                       new Point2D().initialize(25, 50)], 
+                                            "pink", "black");
+var p4 = new PolygonObject().initialize(700, 300, [new Point2D().initialize(25, 25),
+                                                       new Point2D().initialize(-25, 75),
+                                                       new Point2D().initialize(-25, -25),
+                                                       new Point2D().initialize(25, -75)], 
+                                            "yellow", "black");
+var p5 = new PolygonObject().initialize(550, 300, [new Point2D().initialize(-50, 25),
+                                                       new Point2D().initialize(0, -25),
+                                                       new Point2D().initialize(50, 25)],
+                                            "orange", "black");
+var p6 = new PolygonObject().initialize(500, 300, [new Point2D().initialize(-50, 0),
+                                                       new Point2D().initialize(0, -50),
+                                                       new Point2D().initialize(50, 0),
+                                                       new Point2D().initialize(0, 50)],
+                                            "green", "black");
+var p7 = new PolygonObject().initialize(550, 300, [new Point2D().initialize(50, 25),
+                                                       new Point2D().initialize(-50, 25),
+                                                       new Point2D().initialize(50, -75)],
+                                            "blue", "black");
+var ground = new BoxObject().initialize(500, 700, 1888, 235, "red", "black");
+var layer = new Layer().initialize();
+var scene = new Scene().initialize(-2000, -2000, 2000, 2000);
+
+ComponentUtils.addComponent(p1,p1RB);
+ComponentUtils.addComponent(p2,p2RB);
+ComponentUtils.addComponent(p3,p3RB);
+ComponentUtils.addComponent(p4,p4RB);
+ComponentUtils.addComponent(p5,p5RB);
+ComponentUtils.addComponent(p6,p6RB);
+ComponentUtils.addComponent(p7,p7RB);
+ComponentUtils.addComponent(ground,groundRB);
+ComponentUtils.addComponent(ground,groundImg);
+ComponentUtils.addComponent(Game,fpsMeter);
+ComponentUtils.addComponent(Game,mcc);
+ComponentUtils.addComponent(Game,mtc);
+
+
+layer.addGameObject(p1);
+layer.addGameObject(p2);
+layer.addGameObject(p3);
+layer.addGameObject(p4);
+layer.addGameObject(p5);
+layer.addGameObject(p6);
+layer.addGameObject(p7);
+layer.addGameObject(ground);
+scene.addLayer(layer);
+
+layer.setGravity(0);
+
+ComponentUtils.removeComponent(ground, ComponentUtils.getComponent(ground, "BOX_RENDER_COMPONENT"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+function createGame(){
+Game.init(document.getElementById("gameCanvas"), scene);
+Game.camera.centerPoint.x = 425; Game.camera.centerPoint.y = 365;
+}
+</script>
+</head>
+<body onload="createGame();">
+<canvas id="gameCanvas" width="1024" height="800" style="border: 1px solid black;" />
+</body>
+</html>

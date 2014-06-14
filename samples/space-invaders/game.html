@@ -1,0 +1,64 @@
+<html>
+<head>
+<script src="./js/engine.min.js"></script>
+<script src="./js/MoveSpaceShipComponent.js"></script>
+<script src="./js/SpaceShipEnemyBehavior.js"></script>
+<script src="./js/SpaceShipEnemyObject.js"></script>
+<script src="./js/SpaceShipObject.js"></script>
+<script type="text/javascript">
+AssetStore.addAsset(new Asset().initialize("explosion", "./assets/explosion.png", "IMAGE"));
+AssetStore.addAsset(new Asset().initialize("ship_enemy", "./assets/ship_enemy.png", "IMAGE"));
+AssetStore.addAsset(new Asset().initialize("space_background", "./assets/space_background.png", "IMAGE"));
+AssetStore.addAsset(new Asset().initialize("space_ship", "./assets/space_ship.png", "IMAGE"));
+AssetStore.addAsset(new Asset().initialize("bullet", "./assets/bullet.png", "IMAGE"));
+
+var backgroundImage = new ImageRenderComponent().initialize(AssetStore.getAsset("space_background").getAssetInstance(), false, "HORIZONTAL");
+var fpsmeter = new FpsMeterComponent().initialize();
+var background = new BoxObject().initialize(500, 500, 1280, 720, "black", "black");
+var spaceShip = new SpaceShipObject().initialize(500, 670, 150, 120, AssetStore.getAsset("space_ship").getAssetInstance());
+var e1 = new SpaceShipEnemyObject().initialize(500, 290);
+var e2 = new SpaceShipEnemyObject().initialize(550, 290);
+var e3 = new SpaceShipEnemyObject().initialize(600, 290);
+var e4 = new SpaceShipEnemyObject().initialize(650, 290);
+var e5 = new SpaceShipEnemyObject().initialize(700, 290);
+var e6 = new SpaceShipEnemyObject().initialize(450, 290);
+var e7 = new SpaceShipEnemyObject().initialize(400, 290);
+var e8 = new SpaceShipEnemyObject().initialize(350, 290);
+var e9 = new SpaceShipEnemyObject().initialize(300, 290);
+var layerBack = new Layer().initialize();
+var layer = new Layer().initialize();
+var scene = new Scene().initialize(-1000, -1000, 1000, 1000);
+
+ComponentUtils.addComponent(background,backgroundImage);
+ComponentUtils.addComponent(Game,fpsmeter);
+
+layerBack.addGameObject(background);
+layer.addGameObject(spaceShip);
+layer.addGameObject(e1);
+layer.addGameObject(e2);
+layer.addGameObject(e3);
+layer.addGameObject(e4);
+layer.addGameObject(e5);
+layer.addGameObject(e6);
+layer.addGameObject(e7);
+layer.addGameObject(e8);
+layer.addGameObject(e9);
+
+
+scene.addLayer(layerBack);
+scene.addLayer(layer);
+ComponentUtils.removeComponent(background, ComponentUtils.getComponent(background, "BOX_RENDER_COMPONENT"));
+
+
+layer.setGravity(0);
+
+function createGame(){
+Game.init(document.getElementById("gameCanvas"), scene);
+Game.camera.centerPoint.x = 500; Game.camera.centerPoint.y = 500;
+}
+</script>
+</head>
+<body onload="createGame();">
+<canvas id="gameCanvas" width="1024" height="800" style="border: 1px solid black;" />
+</body>
+</html>
