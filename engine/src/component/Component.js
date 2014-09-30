@@ -225,3 +225,24 @@ Component.prototype.onStickMoved = function(value, stick, direction){}
 * @return {String} tag
 */
 Component.prototype.getTag = function(){return null;}
+
+Component.prototype.onTouchStart = function(touchList){
+	//for (var i = 0; i < touchList.length; i++) {
+	//    var touch = touchList[i];
+	//    console.log("start -> identifier = " + touch.identifier + " | x = " + touch.pageX + "| y = " + touch.pageY);
+ 	//}
+}
+
+Component.prototype.onTouchMove = function(touchList){
+	//for (var i = 0; i < touchList.length; i++) {
+	//    var touch = touchList[i];
+	//    console.log("move -> identifier = " + touch.identifier + " | x = " + touch.pageX + "| y = " + touch.pageY);
+ 	//}
+}
+
+Component.prototype.onTouchEnd = function(touchList){
+	//for (var i = 0; i < touchList.length; i++) {
+	//    var touch = touchList[i];
+	//    console.log("end -> identifier = " + touch.identifier + " | x = " + touch.pageX + "| y = " + touch.pageY);
+ 	//}
+}

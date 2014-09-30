@@ -116,14 +116,6 @@ var MouseSystem = new function(){
 		var y = evt.offsetY || evt.layerY;
 		var wich = evt.wich;
 
-		if(evt.targetTouches && evt.targetTouches.length > 0){
-			evt.preventDefault();
-			var touch = evt.targetTouches[0];
-			x = touch.pageX;
-			y = touch.pageY;
-			wich = 0;
-		}
-
 		for(var i in Game.listComponents){
 			var component = Game.listComponents[i];
 			if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
@@ -176,14 +168,6 @@ var MouseSystem = new function(){
 		var y = evt.offsetY || evt.layerY;
 		var wich = evt.wich;
 
-		if(evt.targetTouches && evt.targetTouches.length > 0){
-			evt.preventDefault();
-			var touch = evt.targetTouches[0];
-			x = touch.pageX;
-			y = touch.pageY;
-			wich = 0;
-		}
-
 		for(var i in Game.listComponents){
 			var component = Game.listComponents[i];
 			if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
@@ -234,13 +218,6 @@ var MouseSystem = new function(){
 
 		var x = evt.offsetX || evt.layerX;
 		var y = evt.offsetY || evt.layerY;
-
-		if(evt.targetTouches && evt.targetTouches.length > 0){
-			evt.preventDefault();
-			var touch = evt.targetTouches[0];
-			x = touch.pageX;
-			y = touch.pageY;
-		}
 
 		for(var i in Game.listComponents){
 			var component = Game.listComponents[i];
@@ -298,6 +275,3 @@ window.addEventListener("click",      MouseSystem.fireClickListener);
 window.addEventListener("mousedown",  MouseSystem.fireMouseDownListener);
 window.addEventListener("mouseup",    MouseSystem.fireMouseUpListener);
 window.addEventListener("mousemove",  MouseSystem.fireMouseMoveListener);
-window.addEventListener("touchstart", MouseSystem.fireMouseDownListener);
-window.addEventListener("touchmove",  MouseSystem.fireMouseMoveListener);
-window.addEventListener("touchend",   MouseSystem.fireMouseUpListener);
