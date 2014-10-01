@@ -393,6 +393,14 @@ b2World.prototype =
 					LogicSystem.putCollideInfo(cn.contact.GetShape1().GetBody().GetUserData(),
 				                               cn.contact.GetShape2().GetBody().GetUserData());
 
+					//BOX2D_CUSTOMIZACAO - Marcos Harbs: Alterção para tratar o
+					//corpo apenas como um sensor de colisão e não para
+					//resolver a colisão, permitindo que dois corpos ocupem
+					//o mesmo espaço.
+					if (b.isSensor == true || cn.other.isSensor == true) {
+						continue;
+					}
+
 					island.AddContact(cn.contact);
 					cn.contact.m_flags |= b2Contact.e_islandFlag;
 

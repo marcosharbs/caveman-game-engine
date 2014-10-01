@@ -29,6 +29,20 @@ JSUtils.addMethod(RigidBodyComponent.prototype, "initialize",
 		this.preventRotation = preventRotation;
 		this.allowSleep = allowSleep;
 		this.friction = friction;
+		this.isSensor = false;
+		return this;
+	}
+);
+
+JSUtils.addMethod(RigidBodyComponent.prototype, "initialize", 
+	function(restitution, density, preventRotation, allowSleep, friction, isSensor){
+		this.initialize();
+		this.restitution = restitution;
+		this.density = density;
+		this.preventRotation = preventRotation;
+		this.allowSleep = allowSleep;
+		this.friction = friction;
+		this.isSensor = isSensor;
 		return this;
 	}
 );
@@ -117,6 +131,7 @@ RigidBodyComponent.prototype.createPhysicsBody = function(){
 	var ab = this.owner.getAngle();
 	this.owner.body = this.owner.layer.world.CreateBody(bodyDef);
 	this.owner.body.m_rotation = ab;
+	this.owner.body.isSensor = this.isSensor;
 }
 
 /**
