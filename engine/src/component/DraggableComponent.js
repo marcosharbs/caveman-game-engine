@@ -10,7 +10,7 @@ DraggableComponent.prototype.startX = 0;
 DraggableComponent.prototype.startY = 0;
 
 DraggableComponent.prototype.startDrag = function(x, y){
-	var point = MouseSystem.getNormalizedCoordinate(x, y);
+	  var point = MouseSystem.getNormalizedCoordinate(x, y);
 
     x = point.x;
     y = point.y;
@@ -30,7 +30,7 @@ DraggableComponent.prototype.startDrag = function(x, y){
 
 DraggableComponent.prototype.moveDrag = function(x, y){
 	if(this.dragging == true){
-    	var point = MouseSystem.getNormalizedCoordinate(x, y);
+    	  var point = MouseSystem.getNormalizedCoordinate(x, y);
 
       	x = point.x;
       	y = point.y;
@@ -46,7 +46,7 @@ DraggableComponent.prototype.moveDrag = function(x, y){
 }
 
 DraggableComponent.prototype.endDrag = function(){
-	this.startX = 0;
+	  this.startX = 0;
     this.startY = 0;
     this.dragging = false;
 }
@@ -78,6 +78,7 @@ DraggableComponent.prototype.onTouchEnd = function(touchList){
 DraggableComponent.prototype.getSystems = function(){
   var systems = new Array();
   systems = ArrayUtils.addElement(systems, TouchSystem.getTag());
+  systems = ArrayUtils.addElement(systems, MouseSystem.getTag());
   return systems;
 }
 
