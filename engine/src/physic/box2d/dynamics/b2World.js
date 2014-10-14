@@ -386,6 +386,12 @@ b2World.prototype =
 						continue;
 					}
 
+					//BOX2D_CUSTOMIZACAO - Marcos Harbs: Alteração para tornar um corpo 
+					//possível de não ser colidível com outros corpos no mundo da Box2D.
+					if(!b.isCollidable){
+						continue;
+					}
+
 					//BOX2D_CUSTOMIZACAO - Marcos Harbs: Alteração feita para disparar um evento
 					//customizado quando ocorrer a colisão entre dois objetos.
 					//Foi necessário pois a Box2DJS não implementa a classe
