@@ -2,7 +2,9 @@
 var TouchSystem = new function(){
 
 	this.fireTouchStartListener = function(evt) {
-		evt.preventDefault();
+		if(evt.target.nodeName == "CANVAS"){
+			evt.preventDefault();
+		}
 		if(evt.touches && evt.touches.length > 0) {
 			for(var i in Game.listComponents){
 				var component = Game.listComponents[i];
@@ -44,7 +46,9 @@ var TouchSystem = new function(){
 	}
 
 	this.fireTouchMoveListener = function(evt) {
-		evt.preventDefault();
+		if(evt.target.nodeName == "CANVAS"){
+			evt.preventDefault();
+		}
 		if(evt.touches && evt.touches.length > 0) {
 			for(var i in Game.listComponents){
 				var component = Game.listComponents[i];
@@ -86,7 +90,9 @@ var TouchSystem = new function(){
 	}
 
 	this.fireTouchEndListener = function(evt) {
-		evt.preventDefault();
+		if(evt.target.nodeName == "CANVAS"){
+			evt.preventDefault();
+		}
 		if(evt.changedTouches && evt.changedTouches.length > 0) {
 			for(var i in Game.listComponents){
 				var component = Game.listComponents[i];

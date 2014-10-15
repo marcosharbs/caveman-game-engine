@@ -64,11 +64,13 @@ DraggableComponent.prototype.onMouseUp = function(x, y, wich){
 }
 
 DraggableComponent.prototype.onTouchStart = function(touchList){
-	this.startDrag(touchList[0].pageX, touchList[0].pageY);
+	this.startDrag(touchList[0].pageX - Game.canvas.offsetLeft, 
+                 touchList[0].pageY - Game.canvas.offsetTop);
 }
 
 DraggableComponent.prototype.onTouchMove = function(touchList){
-	this.moveDrag(touchList[0].pageX, touchList[0].pageY);
+	this.moveDrag(touchList[0].pageX - Game.canvas.offsetLeft, 
+                touchList[0].pageY - Game.canvas.offsetTop);
 }
 
 DraggableComponent.prototype.onTouchEnd = function(touchList){
