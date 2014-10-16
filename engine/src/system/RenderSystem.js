@@ -7,6 +7,8 @@
 */
 var RenderSystem = new function(){
 
+	this.clearCanvas = true;
+
 	/**
 	* Método usado para propagar o evento de render.
 	*
@@ -16,8 +18,10 @@ var RenderSystem = new function(){
 	* @param {Context} context
 	*/
 	this.fireRenderListener = function(context){
-		context.setTransform(1,0,0,1,0,0);
-		context.clearRect(0,0,Game.canvas.width,Game.canvas.height);
+		if(RenderSystem.clearCanvas == true){
+			context.setTransform(1,0,0,1,0,0);
+		    context.clearRect(0,0,Game.canvas.width,Game.canvas.height);
+		}
 
 		context.save();
 
