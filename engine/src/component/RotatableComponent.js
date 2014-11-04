@@ -132,9 +132,9 @@ RotatableComponent.prototype.onTouchEnd = function(touchList){
 
 RotatableComponent.prototype.getSystems = function(){
   var systems = new Array();
-  systems = ArrayUtils.addElement(systems, TouchSystem.getTag());
-  systems = ArrayUtils.addElement(systems, MouseSystem.getTag());
-  systems = ArrayUtils.addElement(systems, KeySystem.getTag());
+  systems = ArrayUtils.addElement(systems, TouchSystem);
+  systems = ArrayUtils.addElement(systems, MouseSystem);
+  systems = ArrayUtils.addElement(systems, KeySystem);
   return systems;
 }
 

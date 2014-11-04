@@ -5,15 +5,15 @@ var KinectSystem = new function(){
 		x = x - rect.left;
 		y = y - rect.top;
 		
-		for(var i in Game.listComponents){
-			var component = Game.listComponents[i];
+		for(var i in Game[KinectSystem.getListName()]){
+			var component = Game[KinectSystem.getListName()][i];
 			if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
 				component.onMouseDown(x, y, -1);
 			}
 		}
 		if(Game.scene){
-			for(var i in Game.scene.listComponents){
-				var component = Game.scene.listComponents[i];
+			for(var i in Game.scene[KinectSystem.getListName()]){
+				var component = Game.scene[KinectSystem.getListName()][i];
 				if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
 					component.onMouseDown(x, y, -1);
 				}
@@ -21,8 +21,8 @@ var KinectSystem = new function(){
 			for(var i in Game.scene.listLayers){
 				var layer = Game.scene.listLayers[i];
 				if(layer instanceof Layer){
-					for(var j in layer.listComponents){
-						var component = layer.listComponents[j];
+					for(var j in layer[KinectSystem.getListName()]){
+						var component = layer[KinectSystem.getListName()][j];
 						if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
 							component.onMouseDown(x, y, -1);
 						}
@@ -30,8 +30,8 @@ var KinectSystem = new function(){
 					for(var j in layer.listGameObjects){
 						var gameObject = layer.listGameObjects[j];
 						if(gameObject instanceof GameObject){
-							for(var k in gameObject.listComponents){
-								var component = gameObject.listComponents[k];
+							for(var k in gameObject[KinectSystem.getListName()]){
+								var component = gameObject[KinectSystem.getListName()][k];
 								if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
 									component.onMouseDown(x, y, -1);
 								}
@@ -48,15 +48,15 @@ var KinectSystem = new function(){
 		x = x - rect.left;
 		y = y - rect.top;
 		
-		for(var i in Game.listComponents){
-			var component = Game.listComponents[i];
+		for(var i in Game[KinectSystem.getListName()]){
+			var component = Game[KinectSystem.getListName()][i];
 			if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
 				component.onMouseUp(x, y, -1);
 			}
 		}
 		if(Game.scene){
-			for(var i in Game.scene.listComponents){
-				var component = Game.scene.listComponents[i];
+			for(var i in Game.scene[KinectSystem.getListName()]){
+				var component = Game.scene[KinectSystem.getListName()][i];
 				if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
 					component.onMouseUp(x, y, -1);
 				}
@@ -64,8 +64,8 @@ var KinectSystem = new function(){
 			for(var i in Game.scene.listLayers){
 				var layer = Game.scene.listLayers[i];
 				if(layer instanceof Layer){
-					for(var j in layer.listComponents){
-						var component = layer.listComponents[j];
+					for(var j in layer[KinectSystem.getListName()]){
+						var component = layer[KinectSystem.getListName()][j];
 						if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
 							component.onMouseUp(x, y, -1);
 						}
@@ -73,8 +73,8 @@ var KinectSystem = new function(){
 					for(var j in layer.listGameObjects){
 						var gameObject = layer.listGameObjects[j];
 						if(gameObject instanceof GameObject){
-							for(var k in gameObject.listComponents){
-								var component = gameObject.listComponents[k];
+							for(var k in gameObject[KinectSystem.getListName()]){
+								var component = gameObject[KinectSystem.getListName()][k];
 								if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
 									component.onMouseUp(x, y, -1);
 								}
@@ -91,15 +91,15 @@ var KinectSystem = new function(){
 		x = x - rect.left;
 		y = y - rect.top;
 		
-		for(var i in Game.listComponents){
-			var component = Game.listComponents[i];
+		for(var i in Game[KinectSystem.getListName()]){
+			var component = Game[KinectSystem.getListName()][i];
 			if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
 				component.onMouseMove(x, y);
 			}
 		}
 		if(Game.scene){
-			for(var i in Game.scene.listComponents){
-				var component = Game.scene.listComponents[i];
+			for(var i in Game.scene[KinectSystem.getListName()]){
+				var component = Game.scene[KinectSystem.getListName()][i];
 				if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
 					component.onMouseMove(x, y);
 				}
@@ -107,8 +107,8 @@ var KinectSystem = new function(){
 			for(var i in Game.scene.listLayers){
 				var layer = Game.scene.listLayers[i];
 				if(layer instanceof Layer){
-					for(var j in layer.listComponents){
-						var component = layer.listComponents[j];
+					for(var j in layer[KinectSystem.getListName()]){
+						var component = layer[KinectSystem.getListName()][j];
 						if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
 							component.onMouseMove(x, y);
 						}
@@ -116,8 +116,8 @@ var KinectSystem = new function(){
 					for(var j in layer.listGameObjects){
 						var gameObject = layer.listGameObjects[j];
 						if(gameObject instanceof GameObject){
-							for(var k in gameObject.listComponents){
-								var component = gameObject.listComponents[k];
+							for(var k in gameObject[KinectSystem.getListName()]){
+								var component = gameObject[KinectSystem.getListName()][k];
 								if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
 									component.onMouseMove(x, y);
 								}
@@ -173,6 +173,10 @@ var KinectSystem = new function(){
 
 	this.getTag = function(){
 		return "KINECT_SYSTEM";
+	}
+
+	this.getListName = function(){
+		return "listComponentsKinect";
 	}
 
 }

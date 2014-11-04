@@ -168,15 +168,15 @@ var GamepadSystem = new function(){
   }
   
   this.fireStickMoved = function(value, stick, direction){
-		for(var i in Game.listComponents){
-			var component = Game.listComponents[i];
+		for(var i in Game[GamepadSystem.getListName()]){
+			var component = Game[GamepadSystem.getListName()][i];
 			if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), KeySystem.getTag())*/){
 				component.onStickMoved(value, stick, direction);
 			}
 		}
 		if(Game.scene){
-			for(var i in Game.scene.listComponents){
-				var component = Game.scene.listComponents[i];
+			for(var i in Game.scene[GamepadSystem.getListName()]){
+				var component = Game.scene[GamepadSystem.getListName()][i];
 				if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), KeySystem.getTag())*/){
 					component.onStickMoved(value, stick, direction);
 				}
@@ -184,8 +184,8 @@ var GamepadSystem = new function(){
 			for(var i in Game.scene.listLayers){
 				var layer = Game.scene.listLayers[i];
 				if(layer instanceof Layer){
-					for(var j in layer.listComponents){
-						var component = layer.listComponents[j];
+					for(var j in layer[GamepadSystem.getListName()]){
+						var component = layer[GamepadSystem.getListName()][j];
 						if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), KeySystem.getTag())*/){
 							component.onStickMoved(value, stick, direction);
 						}
@@ -193,8 +193,8 @@ var GamepadSystem = new function(){
 					for(var j in layer.listGameObjects){
 						var gameObject = layer.listGameObjects[j];
 						if(gameObject instanceof GameObject){
-							for(var k in gameObject.listComponents){
-								var component = gameObject.listComponents[k];
+							for(var k in gameObject[GamepadSystem.getListName()]){
+								var component = gameObject[GamepadSystem.getListName()][k];
 								if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), KeySystem.getTag())*/){
 									component.onStickMoved(value, stick, direction);
 								}
@@ -207,15 +207,15 @@ var GamepadSystem = new function(){
   }
 	
   this.fireButtonPressed = function(button){
-		for(var i in Game.listComponents){
-			var component = Game.listComponents[i];
+		for(var i in Game[GamepadSystem.getListName()]){
+			var component = Game[GamepadSystem.getListName()][i];
 			if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), KeySystem.getTag())*/){
 				component.onButtonPressed(button);
 			}
 		}
 		if(Game.scene){
-			for(var i in Game.scene.listComponents){
-				var component = Game.scene.listComponents[i];
+			for(var i in Game.scene[GamepadSystem.getListName()]){
+				var component = Game.scene[GamepadSystem.getListName()][i];
 				if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), KeySystem.getTag())*/){
 					component.onButtonPressed(button);
 				}
@@ -223,8 +223,8 @@ var GamepadSystem = new function(){
 			for(var i in Game.scene.listLayers){
 				var layer = Game.scene.listLayers[i];
 				if(layer instanceof Layer){
-					for(var j in layer.listComponents){
-						var component = layer.listComponents[j];
+					for(var j in layer[GamepadSystem.getListName()]){
+						var component = layer[GamepadSystem.getListName()][j];
 						if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), KeySystem.getTag())*/){
 							component.onButtonPressed(button);
 						}
@@ -232,8 +232,8 @@ var GamepadSystem = new function(){
 					for(var j in layer.listGameObjects){
 						var gameObject = layer.listGameObjects[j];
 						if(gameObject instanceof GameObject){
-							for(var k in gameObject.listComponents){
-								var component = gameObject.listComponents[k];
+							for(var k in gameObject[GamepadSystem.getListName()]){
+								var component = gameObject[GamepadSystem.getListName()][k];
 								if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), KeySystem.getTag())*/){
 									component.onButtonPressed(button);
 								}
@@ -246,15 +246,15 @@ var GamepadSystem = new function(){
 	}
   
   this.fireButtonReleased = function(button){
-		for(var i in Game.listComponents){
-			var component = Game.listComponents[i];
+		for(var i in Game[GamepadSystem.getListName()]){
+			var component = Game[GamepadSystem.getListName()][i];
 			if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), KeySystem.getTag())*/){
 				component.onButtonReleased(button);
 			}
 		}
 		if(Game.scene){
-			for(var i in Game.scene.listComponents){
-				var component = Game.scene.listComponents[i];
+			for(var i in Game.scene[GamepadSystem.getListName()]){
+				var component = Game.scene[GamepadSystem.getListName()][i];
 				if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), KeySystem.getTag())*/){
 					component.onButtonReleased(button);
 				}
@@ -262,8 +262,8 @@ var GamepadSystem = new function(){
 			for(var i in Game.scene.listLayers){
 				var layer = Game.scene.listLayers[i];
 				if(layer instanceof Layer){
-					for(var j in layer.listComponents){
-						var component = layer.listComponents[j];
+					for(var j in layer[GamepadSystem.getListName()]){
+						var component = layer[GamepadSystem.getListName()][j];
 						if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), KeySystem.getTag())*/){
 							component.onButtonReleased(button);
 						}
@@ -271,8 +271,8 @@ var GamepadSystem = new function(){
 					for(var j in layer.listGameObjects){
 						var gameObject = layer.listGameObjects[j];
 						if(gameObject instanceof GameObject){
-							for(var k in gameObject.listComponents){
-								var component = gameObject.listComponents[k];
+							for(var k in gameObject[GamepadSystem.getListName()]){
+								var component = gameObject[GamepadSystem.getListName()][k];
 								if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), KeySystem.getTag())*/){
 									component.onButtonReleased(button);
 								}
@@ -287,6 +287,10 @@ var GamepadSystem = new function(){
   this.getTag = function(){
 	return "GAMEPAD_SYSTEM";
   }
+
+  this.getListName = function(){
+		return "listComponentsGamepad";
+	}
 
 }
 

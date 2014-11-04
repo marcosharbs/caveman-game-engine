@@ -99,7 +99,7 @@ MoveCameraComponent.prototype.onKeyDown = function(keyCode){
 */
 MoveCameraComponent.prototype.getSystems = function(){
   var systems = new Array();
-  systems = ArrayUtils.addElement(systems, KeySystem.getTag());
+  systems = ArrayUtils.addElement(systems, KeySystem);
   return systems;
 }
 

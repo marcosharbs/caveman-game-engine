@@ -34,14 +34,14 @@ var RenderSystem = new function(){
 		}
 
 		if(Game.scene){
-			for(var i in Game.scene.listComponents){
-				var component = Game.scene.listComponents[i];
+			for(var i in Game.scene[RenderSystem.getListName()]){
+				var component = Game.scene[RenderSystem.getListName()][i];
 				if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), RenderSystem.getTag())*/){
 					component.onBeforeRender(context);
 				}
 			}
-			for(var i in Game.scene.listComponents){
-				var component = Game.scene.listComponents[i];
+			for(var i in Game.scene[RenderSystem.getListName()]){
+				var component = Game.scene[RenderSystem.getListName()][i];
 				if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), RenderSystem.getTag())*/){
 					component.onRender(context);
 				}
@@ -49,14 +49,14 @@ var RenderSystem = new function(){
 			for(var i in Game.scene.listLayers){
 				var layer = Game.scene.listLayers[i];
 				if(layer instanceof Layer){
-					for(var j in layer.listComponents){
-						var component = layer.listComponents[j];
+					for(var j in layer[RenderSystem.getListName()]){
+						var component = layer[RenderSystem.getListName()][j];
 						if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), RenderSystem.getTag())*/){
 							component.onBeforeRender(context);
 						}
 					}
-					for(var j in layer.listComponents){
-						var component = layer.listComponents[j];
+					for(var j in layer[RenderSystem.getListName()]){
+						var component = layer[RenderSystem.getListName()][j];
 						if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), RenderSystem.getTag())*/){
 							component.onRender(context);
 						}
@@ -65,14 +65,14 @@ var RenderSystem = new function(){
 						var gameObject = layer.listGameObjects[j];
 						if(gameObject instanceof GameObject){
 							context.save();
-							for(var k in gameObject.listComponents){
-								var component = gameObject.listComponents[k];
+							for(var k in gameObject[RenderSystem.getListName()]){
+								var component = gameObject[RenderSystem.getListName()][k];
 								if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), RenderSystem.getTag())*/){
 									component.onBeforeRender(context);
 								}
 							}
-							for(var k in gameObject.listComponents){
-								var component = gameObject.listComponents[k];
+							for(var k in gameObject[RenderSystem.getListName()]){
+								var component = gameObject[RenderSystem.getListName()][k];
 								if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), RenderSystem.getTag())*/){
 									component.onRender(context);
 								}
@@ -86,14 +86,14 @@ var RenderSystem = new function(){
 
 		context.restore();
 
-		for(var i in Game.listComponents){
-			var component = Game.listComponents[i];
+		for(var i in Game[RenderSystem.getListName()]){
+			var component = Game[RenderSystem.getListName()][i];
 			if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), RenderSystem.getTag())*/){
 				component.onBeforeRender(context);
 			}
 		}
-		for(var i in Game.listComponents){
-			var component = Game.listComponents[i];
+		for(var i in Game[RenderSystem.getListName()]){
+			var component = Game[RenderSystem.getListName()][i];
 			if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), RenderSystem.getTag())*/){
 				component.onRender(context);
 			}
@@ -110,6 +110,10 @@ var RenderSystem = new function(){
 	*/
 	this.getTag = function(){
 		return "RENDER_SYSTEM";
+	}
+
+	this.getListName = function(){
+		return "listComponentsRender";
 	}
 
 }

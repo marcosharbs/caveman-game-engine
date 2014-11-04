@@ -64,15 +64,15 @@ var MouseSystem = new function(){
 		var y = evt.offsetY || evt.layerY;
 		var wich = evt.wich;
 
-		for(var i in Game.listComponents){
-			var component = Game.listComponents[i];
+		for(var i in Game[MouseSystem.getListName()]){
+			var component = Game[MouseSystem.getListName()][i];
 			if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
 				component.onClick(x, y, wich);
 			}
 		}
 		if(Game.scene){
-			for(var i in Game.scene.listComponents){
-				var component = Game.scene.listComponents[i];
+			for(var i in Game.scene[MouseSystem.getListName()]){
+				var component = Game.scene[MouseSystem.getListName()][i];
 				if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
 					component.onClick(x, y, wich);
 				}
@@ -80,8 +80,8 @@ var MouseSystem = new function(){
 			for(var i in Game.scene.listLayers){
 				var layer = Game.scene.listLayers[i];
 				if(layer instanceof Layer){
-					for(var j in layer.listComponents){
-						var component = layer.listComponents[j];
+					for(var j in layer[MouseSystem.getListName()]){
+						var component = layer[MouseSystem.getListName()][j];
 						if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
 							component.onClick(x, y, wich);
 						}
@@ -89,8 +89,8 @@ var MouseSystem = new function(){
 					for(var j in layer.listGameObjects){
 						var gameObject = layer.listGameObjects[j];
 						if(gameObject instanceof GameObject){
-							for(var k in gameObject.listComponents){
-								var component = gameObject.listComponents[k];
+							for(var k in gameObject[MouseSystem.getListName()]){
+								var component = gameObject[MouseSystem.getListName()][k];
 								if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
 									component.onClick(x, y, wich);
 								}
@@ -116,15 +116,15 @@ var MouseSystem = new function(){
 		var y = evt.offsetY || evt.layerY;
 		var wich = evt.wich;
 
-		for(var i in Game.listComponents){
-			var component = Game.listComponents[i];
+		for(var i in Game[MouseSystem.getListName()]){
+			var component = Game[MouseSystem.getListName()][i];
 			if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
 				component.onMouseDown(x, y, wich);
 			}
 		}
 		if(Game.scene){
-			for(var i in Game.scene.listComponents){
-				var component = Game.scene.listComponents[i];
+			for(var i in Game.scene[MouseSystem.getListName()]){
+				var component = Game.scene[MouseSystem.getListName()][i];
 				if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
 					component.onMouseDown(x, y, wich);
 				}
@@ -132,8 +132,8 @@ var MouseSystem = new function(){
 			for(var i in Game.scene.listLayers){
 				var layer = Game.scene.listLayers[i];
 				if(layer instanceof Layer){
-					for(var j in layer.listComponents){
-						var component = layer.listComponents[j];
+					for(var j in layer[MouseSystem.getListName()]){
+						var component = layer[MouseSystem.getListName()][j];
 						if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
 							component.onMouseDown(x, y, wich);
 						}
@@ -141,8 +141,8 @@ var MouseSystem = new function(){
 					for(var j in layer.listGameObjects){
 						var gameObject = layer.listGameObjects[j];
 						if(gameObject instanceof GameObject){
-							for(var k in gameObject.listComponents){
-								var component = gameObject.listComponents[k];
+							for(var k in gameObject[MouseSystem.getListName()]){
+								var component = gameObject[MouseSystem.getListName()][k];
 								if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
 									component.onMouseDown(x, y, wich);
 								}
@@ -168,15 +168,15 @@ var MouseSystem = new function(){
 		var y = evt.offsetY || evt.layerY;
 		var wich = evt.wich;
 
-		for(var i in Game.listComponents){
-			var component = Game.listComponents[i];
+		for(var i in Game[MouseSystem.getListName()]){
+			var component = Game[MouseSystem.getListName()][i];
 			if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
 				component.onMouseUp(x, y, wich);
 			}
 		}
 		if(Game.scene){
-			for(var i in Game.scene.listComponents){
-				var component = Game.scene.listComponents[i];
+			for(var i in Game.scene[MouseSystem.getListName()]){
+				var component = Game.scene[MouseSystem.getListName()][i];
 				if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
 					component.onMouseUp(x, y, wich);
 				}
@@ -184,8 +184,8 @@ var MouseSystem = new function(){
 			for(var i in Game.scene.listLayers){
 				var layer = Game.scene.listLayers[i];
 				if(layer instanceof Layer){
-					for(var j in layer.listComponents){
-						var component = layer.listComponents[j];
+					for(var j in layer[MouseSystem.getListName()]){
+						var component = layer[MouseSystem.getListName()][j];
 						if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
 							component.onMouseUp(x, y, wich);
 						}
@@ -193,8 +193,8 @@ var MouseSystem = new function(){
 					for(var j in layer.listGameObjects){
 						var gameObject = layer.listGameObjects[j];
 						if(gameObject instanceof GameObject){
-							for(var k in gameObject.listComponents){
-								var component = gameObject.listComponents[k];
+							for(var k in gameObject[MouseSystem.getListName()]){
+								var component = gameObject[MouseSystem.getListName()][k];
 								if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
 									component.onMouseUp(x, y, wich);
 								}
@@ -219,15 +219,15 @@ var MouseSystem = new function(){
 		var x = evt.offsetX || evt.layerX;
 		var y = evt.offsetY || evt.layerY;
 
-		for(var i in Game.listComponents){
-			var component = Game.listComponents[i];
+		for(var i in Game[MouseSystem.getListName()]){
+			var component = Game[MouseSystem.getListName()][i];
 			if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
 				component.onMouseMove(x, y);
 			}
 		}
 		if(Game.scene){
-			for(var i in Game.scene.listComponents){
-				var component = Game.scene.listComponents[i];
+			for(var i in Game.scene[MouseSystem.getListName()]){
+				var component = Game.scene[MouseSystem.getListName()][i];
 				if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
 					component.onMouseMove(x, y);
 				}
@@ -235,8 +235,8 @@ var MouseSystem = new function(){
 			for(var i in Game.scene.listLayers){
 				var layer = Game.scene.listLayers[i];
 				if(layer instanceof Layer){
-					for(var j in layer.listComponents){
-						var component = layer.listComponents[j];
+					for(var j in layer[MouseSystem.getListName()]){
+						var component = layer[MouseSystem.getListName()][j];
 						if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
 							component.onMouseMove(x, y);
 						}
@@ -244,8 +244,8 @@ var MouseSystem = new function(){
 					for(var j in layer.listGameObjects){
 						var gameObject = layer.listGameObjects[j];
 						if(gameObject instanceof GameObject){
-							for(var k in gameObject.listComponents){
-								var component = gameObject.listComponents[k];
+							for(var k in gameObject[MouseSystem.getListName()]){
+								var component = gameObject[MouseSystem.getListName()][k];
 								if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
 									component.onMouseMove(x, y);
 								}
@@ -267,6 +267,10 @@ var MouseSystem = new function(){
 	*/
 	this.getTag = function(){
 		return "MOUSE_SYSTEM";
+	}
+
+	this.getListName = function(){
+		return "listComponentsMouse";
 	}
 
 }

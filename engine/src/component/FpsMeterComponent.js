@@ -23,7 +23,7 @@ FpsMeterComponent.prototype.lastUpdate = 0;
 */
 FpsMeterComponent.prototype.getSystems = function(){
 	var systems = new Array();
-	systems = ArrayUtils.addElement(systems, RenderSystem.getTag());
+	systems = ArrayUtils.addElement(systems, RenderSystem);
 	return systems;
 }
 

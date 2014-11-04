@@ -18,14 +18,14 @@ var LogicSystem = new function(){
 	* @static
 	*/
 	this.fireUpdateListener = function(deltaTime){
-		for(var i in Game.listComponents){
-			var component = Game.listComponents[i];
+		for(var i in Game[LogicSystem.getListName()]){
+			var component = Game[LogicSystem.getListName()][i];
 			if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), LogicSystem.getTag())*/){
 				component.onUpdate(deltaTime);
 			}
 		}
-		for(var i in Game.scene.listComponents){
-			var component = Game.scene.listComponents[i];
+		for(var i in Game.scene[LogicSystem.getListName()]){
+			var component = Game.scene[LogicSystem.getListName()][i];
 			if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), LogicSystem.getTag())*/){
 				component.onUpdate(deltaTime);
 			}
@@ -33,8 +33,8 @@ var LogicSystem = new function(){
 		for(var i in Game.scene.listLayers){
 			var layer = Game.scene.listLayers[i];
 			if(layer instanceof Layer){
-				for(var j in layer.listComponents){
-					var component = layer.listComponents[j];
+				for(var j in layer[LogicSystem.getListName()]){
+					var component = layer[LogicSystem.getListName()][j];
 					if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), LogicSystem.getTag())*/){
 						component.onUpdate(deltaTime);
 					}
@@ -42,8 +42,8 @@ var LogicSystem = new function(){
 				for(var j in layer.listGameObjects){
 					var gameObject = layer.listGameObjects[j];
 					if(gameObject instanceof GameObject){
-						for(var k in gameObject.listComponents){
-							var component = gameObject.listComponents[k];
+						for(var k in gameObject[LogicSystem.getListName()]){
+							var component = gameObject[LogicSystem.getListName()][k];
 							if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), LogicSystem.getTag())*/){
 								component.onUpdate(deltaTime);
 							}
@@ -65,14 +65,14 @@ var LogicSystem = new function(){
 		for(var i in this.listCollides){
 			var collide = this.listCollides[i];
 			if(collide instanceof CollideInfo){
-				for(var j in collide.gameObject1.listComponents){
-					var component = collide.gameObject1.listComponents[j];
+				for(var j in collide.gameObject1[LogicSystem.getListName()]){
+					var component = collide.gameObject1[LogicSystem.getListName()][j];
 					if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), LogicSystem.getTag())*/){
 						component.onCollide(collide.gameObject2);
 					}
 				}
-				for(var j in collide.gameObject2.listComponents){
-					var component = collide.gameObject2.listComponents[j];
+				for(var j in collide.gameObject2[LogicSystem.getListName()]){
+					var component = collide.gameObject2[LogicSystem.getListName()][j];
 					if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), LogicSystem.getTag())*/){
 						component.onCollide(collide.gameObject1);
 					}
@@ -141,6 +141,10 @@ var LogicSystem = new function(){
 	*/
 	this.getTag = function(){
 		return "LOGIC_SYSTEM";
+	}
+
+	this.getListName = function(){
+		return "listComponentsLogic";
 	}
 
 }

@@ -18,11 +18,23 @@ var ComponentUtils = new function(){
 	* @param {Component} component
 	*/
 	this.addComponent = function(object, component){
+		var systems = component.getSystems();
+		for(var i=0; i<systems.length; i++){
+			var system = systems[i];
+			if(!object[system.getListName()]){
+				object[system.getListName()] = new Array();
+			}
+			object[system.getListName()] = ArrayUtils.putElement(object[system.getListName()], 
+																 component.getTag(), 
+																 component);
+		}
 		if(!object.listComponents){
 			object.listComponents = new Array();
 		}
+		object.listComponents = ArrayUtils.putElement(object.listComponents, 
+													  component.getTag(), 
+													  component);
 		component.owner = object;
-		object.listComponents = ArrayUtils.putElement(object.listComponents, component.getTag(), component);
 	}
 
 	/**
@@ -36,8 +48,17 @@ var ComponentUtils = new function(){
 	* @param {Component} component
 	*/
 	this.removeComponent = function(object, component){
+		var systems = component.getSystems();
+		for(var i=0; i<systems.length; i++){
+			var system = systems[i];
+			if(object[system.getListName()]){
+				object[system.getListName()] = ArrayUtils.removeElementByKey(object[system.getListName()], 
+					                                                         component.getTag());
+			}
+		}
 		if(object.listComponents){
-			object.listComponents = ArrayUtils.removeElementByKey(object.listComponents, component.getTag());
+			object.listComponents = ArrayUtils.removeElementByKey(object.listComponents, 
+					                                              component.getTag());
 		}
 	}
 

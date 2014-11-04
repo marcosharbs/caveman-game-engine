@@ -106,8 +106,8 @@ DraggableComponent.prototype.onTouchEnd = function(touchList, changedTouches){
 
 DraggableComponent.prototype.getSystems = function(){
   var systems = new Array();
-  systems = ArrayUtils.addElement(systems, TouchSystem.getTag());
-  systems = ArrayUtils.addElement(systems, MouseSystem.getTag());
+  systems = ArrayUtils.addElement(systems, TouchSystem);
+  systems = ArrayUtils.addElement(systems, MouseSystem);
   return systems;
 }
 
