@@ -5,18 +5,18 @@ var TouchSystem = new function(){
 		if(evt.target.nodeName == "CANVAS"){
 			evt.preventDefault();
 		}
-		if(evt.touches && evt.touches.length > 0) {
+		if(evt.changedTouches && evt.changedTouches.length > 0) {
 			for(var i in Game.listComponents){
 				var component = Game.listComponents[i];
 				if(component instanceof Component){
-					component.onTouchStart(evt.touches);
+					component.onTouchStart(evt.touches, evt.changedTouches);
 				}
 			}
 			if(Game.scene){
 				for(var i in Game.scene.listComponents){
 					var component = Game.scene.listComponents[i];
 					if(component instanceof Component){
-						component.onTouchStart(evt.touches);
+						component.onTouchStart(evt.touches, evt.changedTouches);
 					}
 				}
 				for(var i in Game.scene.listLayers){
@@ -25,7 +25,7 @@ var TouchSystem = new function(){
 						for(var j in layer.listComponents){
 							var component = layer.listComponents[j];
 							if(component instanceof Component){
-								component.onTouchStart(evt.touches);
+								component.onTouchStart(evt.touches, evt.changedTouches);
 							}
 						}
 						for(var j in layer.listGameObjects){
@@ -34,7 +34,7 @@ var TouchSystem = new function(){
 								for(var k in gameObject.listComponents){
 									var component = gameObject.listComponents[k];
 									if(component instanceof Component){
-										component.onTouchStart(evt.touches);
+										component.onTouchStart(evt.touches, evt.changedTouches);
 									}
 								}
 							}
@@ -49,18 +49,18 @@ var TouchSystem = new function(){
 		if(evt.target.nodeName == "CANVAS"){
 			evt.preventDefault();
 		}
-		if(evt.touches && evt.touches.length > 0) {
+		if(evt.changedTouches && evt.changedTouches.length > 0) {
 			for(var i in Game.listComponents){
 				var component = Game.listComponents[i];
 				if(component instanceof Component){
-					component.onTouchMove(evt.touches);
+					component.onTouchMove(evt.touches, evt.changedTouches);
 				}
 			}
 			if(Game.scene){
 				for(var i in Game.scene.listComponents){
 					var component = Game.scene.listComponents[i];
 					if(component instanceof Component){
-						component.onTouchMove(evt.touches);
+						component.onTouchMove(evt.touches, evt.changedTouches);
 					}
 				}
 				for(var i in Game.scene.listLayers){
@@ -69,7 +69,7 @@ var TouchSystem = new function(){
 						for(var j in layer.listComponents){
 							var component = layer.listComponents[j];
 							if(component instanceof Component){
-								component.onTouchMove(evt.touches);
+								component.onTouchMove(evt.touches, evt.changedTouches);
 							}
 						}
 						for(var j in layer.listGameObjects){
@@ -78,7 +78,7 @@ var TouchSystem = new function(){
 								for(var k in gameObject.listComponents){
 									var component = gameObject.listComponents[k];
 									if(component instanceof Component){
-										component.onTouchMove(evt.touches);
+										component.onTouchMove(evt.touches, evt.changedTouches);
 									}
 								}
 							}
@@ -97,14 +97,14 @@ var TouchSystem = new function(){
 			for(var i in Game.listComponents){
 				var component = Game.listComponents[i];
 				if(component instanceof Component){
-					component.onTouchEnd(evt.changedTouches);
+					component.onTouchEnd(evt.touches, evt.changedTouches);
 				}
 			}
 			if(Game.scene){
 				for(var i in Game.scene.listComponents){
 					var component = Game.scene.listComponents[i];
 					if(component instanceof Component){
-						component.onTouchEnd(evt.changedTouches);
+						component.onTouchEnd(evt.touches, evt.changedTouches);
 					}
 				}
 				for(var i in Game.scene.listLayers){
@@ -113,7 +113,7 @@ var TouchSystem = new function(){
 						for(var j in layer.listComponents){
 							var component = layer.listComponents[j];
 							if(component instanceof Component){
-								component.onTouchEnd(evt.changedTouches);
+								component.onTouchEnd(evt.touches, evt.changedTouches);
 							}
 						}
 						for(var j in layer.listGameObjects){
@@ -122,7 +122,7 @@ var TouchSystem = new function(){
 								for(var k in gameObject.listComponents){
 									var component = gameObject.listComponents[k];
 									if(component instanceof Component){
-										component.onTouchEnd(evt.changedTouches);
+										component.onTouchEnd(evt.touches, evt.changedTouches);
 									}
 								}
 							}
