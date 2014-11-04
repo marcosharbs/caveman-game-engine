@@ -5,42 +5,7 @@ var KinectSystem = new function(){
 		x = x - rect.left;
 		y = y - rect.top;
 		
-		for(var i in Game[KinectSystem.getListName()]){
-			var component = Game[KinectSystem.getListName()][i];
-			if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
-				component.onMouseDown(x, y, -1);
-			}
-		}
-		if(Game.scene){
-			for(var i in Game.scene[KinectSystem.getListName()]){
-				var component = Game.scene[KinectSystem.getListName()][i];
-				if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
-					component.onMouseDown(x, y, -1);
-				}
-			}
-			for(var i in Game.scene.listLayers){
-				var layer = Game.scene.listLayers[i];
-				if(layer instanceof Layer){
-					for(var j in layer[KinectSystem.getListName()]){
-						var component = layer[KinectSystem.getListName()][j];
-						if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
-							component.onMouseDown(x, y, -1);
-						}
-					}
-					for(var j in layer.listGameObjects){
-						var gameObject = layer.listGameObjects[j];
-						if(gameObject instanceof GameObject){
-							for(var k in gameObject[KinectSystem.getListName()]){
-								var component = gameObject[KinectSystem.getListName()][k];
-								if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
-									component.onMouseDown(x, y, -1);
-								}
-							}
-						}
-					}
-				}
-			}
-		}
+		ComponentUtils.fireComponentEvent(KinectSystem, "onMouseDown", [x, y, -1]);
 	}
 
 	this.fireHandUpListener = function(x, y){
@@ -48,42 +13,7 @@ var KinectSystem = new function(){
 		x = x - rect.left;
 		y = y - rect.top;
 		
-		for(var i in Game[KinectSystem.getListName()]){
-			var component = Game[KinectSystem.getListName()][i];
-			if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
-				component.onMouseUp(x, y, -1);
-			}
-		}
-		if(Game.scene){
-			for(var i in Game.scene[KinectSystem.getListName()]){
-				var component = Game.scene[KinectSystem.getListName()][i];
-				if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
-					component.onMouseUp(x, y, -1);
-				}
-			}
-			for(var i in Game.scene.listLayers){
-				var layer = Game.scene.listLayers[i];
-				if(layer instanceof Layer){
-					for(var j in layer[KinectSystem.getListName()]){
-						var component = layer[KinectSystem.getListName()][j];
-						if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
-							component.onMouseUp(x, y, -1);
-						}
-					}
-					for(var j in layer.listGameObjects){
-						var gameObject = layer.listGameObjects[j];
-						if(gameObject instanceof GameObject){
-							for(var k in gameObject[KinectSystem.getListName()]){
-								var component = gameObject[KinectSystem.getListName()][k];
-								if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
-									component.onMouseUp(x, y, -1);
-								}
-							}
-						}
-					}
-				}
-			}
-		}
+		ComponentUtils.fireComponentEvent(KinectSystem, "onMouseUp", [x, y, -1]);
 	}
 
 	this.fireHandMoveListener = function(x, y){
@@ -91,42 +21,7 @@ var KinectSystem = new function(){
 		x = x - rect.left;
 		y = y - rect.top;
 		
-		for(var i in Game[KinectSystem.getListName()]){
-			var component = Game[KinectSystem.getListName()][i];
-			if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
-				component.onMouseMove(x, y);
-			}
-		}
-		if(Game.scene){
-			for(var i in Game.scene[KinectSystem.getListName()]){
-				var component = Game.scene[KinectSystem.getListName()][i];
-				if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
-					component.onMouseMove(x, y);
-				}
-			}
-			for(var i in Game.scene.listLayers){
-				var layer = Game.scene.listLayers[i];
-				if(layer instanceof Layer){
-					for(var j in layer[KinectSystem.getListName()]){
-						var component = layer[KinectSystem.getListName()][j];
-						if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
-							component.onMouseMove(x, y);
-						}
-					}
-					for(var j in layer.listGameObjects){
-						var gameObject = layer.listGameObjects[j];
-						if(gameObject instanceof GameObject){
-							for(var k in gameObject[KinectSystem.getListName()]){
-								var component = gameObject[KinectSystem.getListName()][k];
-								if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
-									component.onMouseMove(x, y);
-								}
-							}
-						}
-					}
-				}
-			}
-		}
+		ComponentUtils.fireComponentEvent(KinectSystem, "onMouseMove", [x, y]);
 	}
 	
 	this.onLoadKinect = function(){

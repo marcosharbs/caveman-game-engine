@@ -24,7 +24,7 @@ JSUtils.addMethod(Scene.prototype, "initialize",
 		this.minPoint = new Point2D().initialize(minX, minY);
 		this.maxPoint = new Point2D().initialize(maxX, maxY);
 		this.listLayers = new Array();
-		this.listComponents = new Array();
+		this.listComponents = null;
 		return this;
 	}
 );

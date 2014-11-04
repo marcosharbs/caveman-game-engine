@@ -59,47 +59,12 @@ var MouseSystem = new function(){
 	* @param {Event} evt
 	*/
 	this.fireClickListener = function(evt){
-
+		
 		var x = evt.offsetX || evt.layerX;
 		var y = evt.offsetY || evt.layerY;
 		var wich = evt.wich;
 
-		for(var i in Game[MouseSystem.getListName()]){
-			var component = Game[MouseSystem.getListName()][i];
-			if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
-				component.onClick(x, y, wich);
-			}
-		}
-		if(Game.scene){
-			for(var i in Game.scene[MouseSystem.getListName()]){
-				var component = Game.scene[MouseSystem.getListName()][i];
-				if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
-					component.onClick(x, y, wich);
-				}
-			}
-			for(var i in Game.scene.listLayers){
-				var layer = Game.scene.listLayers[i];
-				if(layer instanceof Layer){
-					for(var j in layer[MouseSystem.getListName()]){
-						var component = layer[MouseSystem.getListName()][j];
-						if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
-							component.onClick(x, y, wich);
-						}
-					}
-					for(var j in layer.listGameObjects){
-						var gameObject = layer.listGameObjects[j];
-						if(gameObject instanceof GameObject){
-							for(var k in gameObject[MouseSystem.getListName()]){
-								var component = gameObject[MouseSystem.getListName()][k];
-								if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
-									component.onClick(x, y, wich);
-								}
-							}
-						}
-					}
-				}
-			}
-		}
+		ComponentUtils.fireComponentEvent(MouseSystem, "onClick", [x, y, wich]);
 	}
 
 	/**
@@ -116,42 +81,7 @@ var MouseSystem = new function(){
 		var y = evt.offsetY || evt.layerY;
 		var wich = evt.wich;
 
-		for(var i in Game[MouseSystem.getListName()]){
-			var component = Game[MouseSystem.getListName()][i];
-			if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
-				component.onMouseDown(x, y, wich);
-			}
-		}
-		if(Game.scene){
-			for(var i in Game.scene[MouseSystem.getListName()]){
-				var component = Game.scene[MouseSystem.getListName()][i];
-				if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
-					component.onMouseDown(x, y, wich);
-				}
-			}
-			for(var i in Game.scene.listLayers){
-				var layer = Game.scene.listLayers[i];
-				if(layer instanceof Layer){
-					for(var j in layer[MouseSystem.getListName()]){
-						var component = layer[MouseSystem.getListName()][j];
-						if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
-							component.onMouseDown(x, y, wich);
-						}
-					}
-					for(var j in layer.listGameObjects){
-						var gameObject = layer.listGameObjects[j];
-						if(gameObject instanceof GameObject){
-							for(var k in gameObject[MouseSystem.getListName()]){
-								var component = gameObject[MouseSystem.getListName()][k];
-								if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
-									component.onMouseDown(x, y, wich);
-								}
-							}
-						}
-					}
-				}
-			}
-		}
+		ComponentUtils.fireComponentEvent(MouseSystem, "onMouseDown", [x, y, wich]);
 	}
 
 	/**
@@ -168,42 +98,7 @@ var MouseSystem = new function(){
 		var y = evt.offsetY || evt.layerY;
 		var wich = evt.wich;
 
-		for(var i in Game[MouseSystem.getListName()]){
-			var component = Game[MouseSystem.getListName()][i];
-			if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
-				component.onMouseUp(x, y, wich);
-			}
-		}
-		if(Game.scene){
-			for(var i in Game.scene[MouseSystem.getListName()]){
-				var component = Game.scene[MouseSystem.getListName()][i];
-				if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
-					component.onMouseUp(x, y, wich);
-				}
-			}
-			for(var i in Game.scene.listLayers){
-				var layer = Game.scene.listLayers[i];
-				if(layer instanceof Layer){
-					for(var j in layer[MouseSystem.getListName()]){
-						var component = layer[MouseSystem.getListName()][j];
-						if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
-							component.onMouseUp(x, y, wich);
-						}
-					}
-					for(var j in layer.listGameObjects){
-						var gameObject = layer.listGameObjects[j];
-						if(gameObject instanceof GameObject){
-							for(var k in gameObject[MouseSystem.getListName()]){
-								var component = gameObject[MouseSystem.getListName()][k];
-								if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
-									component.onMouseUp(x, y, wich);
-								}
-							}
-						}
-					}
-				}
-			}
-		}
+		ComponentUtils.fireComponentEvent(MouseSystem, "onMouseUp", [x, y, wich]);
 	}
 
 	/**
@@ -219,42 +114,7 @@ var MouseSystem = new function(){
 		var x = evt.offsetX || evt.layerX;
 		var y = evt.offsetY || evt.layerY;
 
-		for(var i in Game[MouseSystem.getListName()]){
-			var component = Game[MouseSystem.getListName()][i];
-			if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
-				component.onMouseMove(x, y);
-			}
-		}
-		if(Game.scene){
-			for(var i in Game.scene[MouseSystem.getListName()]){
-				var component = Game.scene[MouseSystem.getListName()][i];
-				if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
-					component.onMouseMove(x, y);
-				}
-			}
-			for(var i in Game.scene.listLayers){
-				var layer = Game.scene.listLayers[i];
-				if(layer instanceof Layer){
-					for(var j in layer[MouseSystem.getListName()]){
-						var component = layer[MouseSystem.getListName()][j];
-						if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
-							component.onMouseMove(x, y);
-						}
-					}
-					for(var j in layer.listGameObjects){
-						var gameObject = layer.listGameObjects[j];
-						if(gameObject instanceof GameObject){
-							for(var k in gameObject[MouseSystem.getListName()]){
-								var component = gameObject[MouseSystem.getListName()][k];
-								if(component instanceof Component /*&& ArrayUtils.contains(component.getSystems(), MouseSystem.getTag())*/){
-									component.onMouseMove(x, y);
-								}
-							}
-						}
-					}
-				}
-			}
-		}
+		ComponentUtils.fireComponentEvent(MouseSystem, "onMouseMove", [x, y]);
 	}
 
 	/**

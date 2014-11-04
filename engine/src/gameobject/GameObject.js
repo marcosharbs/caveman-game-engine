@@ -26,7 +26,7 @@ JSUtils.addMethod(GameObject.prototype, "initialize",
 		this.height = height;
 		this.body = null;
 		this.layer = null;
-		this.listComponents = new Array();
+		this.listComponents = null;
 		return this;
 	}
 );

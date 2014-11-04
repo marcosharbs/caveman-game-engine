@@ -21,7 +21,7 @@ JSUtils.addMethod(Layer.prototype, "initialize",
 		this.world = null;
 		this.gravity = 1000;
 		this.doSleep = true;
-		this.listComponents = new Array();
+		this.listComponents = null;
 		this.listGameObjects = new Array();
 		return this;
 	}

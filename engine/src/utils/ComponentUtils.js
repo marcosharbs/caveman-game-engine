@@ -22,14 +22,14 @@ var ComponentUtils = new function(){
 		for(var i=0; i<systems.length; i++){
 			var system = systems[i];
 			if(!object[system.getListName()]){
-				object[system.getListName()] = new Array();
+				object[system.getListName()] = {};
 			}
 			object[system.getListName()] = ArrayUtils.putElement(object[system.getListName()], 
 																 component.getTag(), 
 																 component);
 		}
 		if(!object.listComponents){
-			object.listComponents = new Array();
+			object.listComponents = {};
 		}
 		object.listComponents = ArrayUtils.putElement(object.listComponents, 
 													  component.getTag(), 
@@ -76,6 +76,41 @@ var ComponentUtils = new function(){
 	this.getComponent = function(object, tag){
 		if(object.listComponents){
 			return ArrayUtils.getElementByKey(object.listComponents, tag);
+		}
+	}
+
+	this.fireComponentEvent = function(system, functionStr, paramsArray){
+		if(Game[system.getListName()]){
+			for(var i in Game[system.getListName()]){
+				var component = Game[system.getListName()][i];
+				component[functionStr].apply(component, paramsArray);
+			}
+		}
+		if(Game.scene){
+			if(Game.scene[system.getListName()]){
+				for(var i in Game.scene[system.getListName()]){
+					var component = Game.scene[system.getListName()][i];
+					component[functionStr].apply(component, paramsArray);
+				}
+			}
+			for(var i=0; i<Game.scene.listLayers.length; i++){
+				var layer = Game.scene.listLayers[i];
+				if(layer[system.getListName()]){
+					for(var j in layer[system.getListName()]){
+						var component = layer[system.getListName()][j];
+						component[functionStr].apply(component, paramsArray);
+					}
+				}
+				for(var j=0; j<layer.listGameObjects.length; j++){
+					var gameObject = layer.listGameObjects[j];
+					if(gameObject[system.getListName()]){
+						for(var k in gameObject[system.getListName()]){
+							var component = gameObject[system.getListName()][k];
+							component[functionStr].apply(component, paramsArray);
+						}
+					}
+				}
+			}
 		}
 	}
 

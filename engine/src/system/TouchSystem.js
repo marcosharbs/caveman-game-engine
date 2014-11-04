@@ -6,42 +6,7 @@ var TouchSystem = new function(){
 			evt.preventDefault();
 		}
 		if(evt.changedTouches && evt.changedTouches.length > 0) {
-			for(var i in Game[TouchSystem.getListName()]){
-				var component = Game[TouchSystem.getListName()][i];
-				if(component instanceof Component){
-					component.onTouchStart(evt.touches, evt.changedTouches);
-				}
-			}
-			if(Game.scene){
-				for(var i in Game.scene[TouchSystem.getListName()]){
-					var component = Game.scene[TouchSystem.getListName()][i];
-					if(component instanceof Component){
-						component.onTouchStart(evt.touches, evt.changedTouches);
-					}
-				}
-				for(var i in Game.scene.listLayers){
-					var layer = Game.scene.listLayers[i];
-					if(layer instanceof Layer){
-						for(var j in layer[TouchSystem.getListName()]){
-							var component = layer[TouchSystem.getListName()][j];
-							if(component instanceof Component){
-								component.onTouchStart(evt.touches, evt.changedTouches);
-							}
-						}
-						for(var j in layer.listGameObjects){
-							var gameObject = layer.listGameObjects[j];
-							if(gameObject instanceof GameObject){
-								for(var k in gameObject[TouchSystem.getListName()]){
-									var component = gameObject[TouchSystem.getListName()][k];
-									if(component instanceof Component){
-										component.onTouchStart(evt.touches, evt.changedTouches);
-									}
-								}
-							}
-						}
-					}
-				}
-			}
+			ComponentUtils.fireComponentEvent(TouchSystem, "onTouchStart", [evt.touches, evt.changedTouches]);
 		}
 	}
 
@@ -50,42 +15,7 @@ var TouchSystem = new function(){
 			evt.preventDefault();
 		}
 		if(evt.changedTouches && evt.changedTouches.length > 0) {
-			for(var i in Game[TouchSystem.getListName()]){
-				var component = Game[TouchSystem.getListName()][i];
-				if(component instanceof Component){
-					component.onTouchMove(evt.touches, evt.changedTouches);
-				}
-			}
-			if(Game.scene){
-				for(var i in Game.scene[TouchSystem.getListName()]){
-					var component = Game.scene[TouchSystem.getListName()][i];
-					if(component instanceof Component){
-						component.onTouchMove(evt.touches, evt.changedTouches);
-					}
-				}
-				for(var i in Game.scene.listLayers){
-					var layer = Game.scene.listLayers[i];
-					if(layer instanceof Layer){
-						for(var j in layer[TouchSystem.getListName()]){
-							var component = layer[TouchSystem.getListName()][j];
-							if(component instanceof Component){
-								component.onTouchMove(evt.touches, evt.changedTouches);
-							}
-						}
-						for(var j in layer.listGameObjects){
-							var gameObject = layer.listGameObjects[j];
-							if(gameObject instanceof GameObject){
-								for(var k in gameObject[TouchSystem.getListName()]){
-									var component = gameObject[TouchSystem.getListName()][k];
-									if(component instanceof Component){
-										component.onTouchMove(evt.touches, evt.changedTouches);
-									}
-								}
-							}
-						}
-					}
-				}
-			}
+			ComponentUtils.fireComponentEvent(TouchSystem, "onTouchMove", [evt.touches, evt.changedTouches]);
 		}
 	}
 
@@ -94,42 +24,7 @@ var TouchSystem = new function(){
 			evt.preventDefault();
 		}
 		if(evt.changedTouches && evt.changedTouches.length > 0) {
-			for(var i in Game[TouchSystem.getListName()]){
-				var component = Game[TouchSystem.getListName()][i];
-				if(component instanceof Component){
-					component.onTouchEnd(evt.touches, evt.changedTouches);
-				}
-			}
-			if(Game.scene){
-				for(var i in Game.scene[TouchSystem.getListName()]){
-					var component = Game.scene[TouchSystem.getListName()][i];
-					if(component instanceof Component){
-						component.onTouchEnd(evt.touches, evt.changedTouches);
-					}
-				}
-				for(var i in Game.scene.listLayers){
-					var layer = Game.scene.listLayers[i];
-					if(layer instanceof Layer){
-						for(var j in layer[TouchSystem.getListName()]){
-							var component = layer[TouchSystem.getListName()][j];
-							if(component instanceof Component){
-								component.onTouchEnd(evt.touches, evt.changedTouches);
-							}
-						}
-						for(var j in layer.listGameObjects){
-							var gameObject = layer.listGameObjects[j];
-							if(gameObject instanceof GameObject){
-								for(var k in gameObject[TouchSystem.getListName()]){
-									var component = gameObject[TouchSystem.getListName()][k];
-									if(component instanceof Component){
-										component.onTouchEnd(evt.touches, evt.changedTouches);
-									}
-								}
-							}
-						}
-					}
-				}
-			}
+			ComponentUtils.fireComponentEvent(TouchSystem, "onTouchEnd", [evt.touches, evt.changedTouches]);
 		}
 	}
 
