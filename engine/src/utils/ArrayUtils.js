@@ -35,7 +35,7 @@
 	* @return {Array} array
 	*/
 	this.removeElementByKey = function(array, key){
-		array[key] = undefined;
+		delete array[key];
 		return array;
 	}
 
