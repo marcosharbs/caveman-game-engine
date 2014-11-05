@@ -5,7 +5,7 @@ var KinectSystem = new function(){
 		x = x - rect.left;
 		y = y - rect.top;
 		
-		ComponentUtils.fireComponentEvent(KinectSystem, "onMouseDown", [x, y, -1]);
+		ComponentUtils.fireComponentEvent(KinectSystem.getListName(), "onMouseDown", [x, y, -1]);
 	}
 
 	this.fireHandUpListener = function(x, y){
@@ -13,7 +13,7 @@ var KinectSystem = new function(){
 		x = x - rect.left;
 		y = y - rect.top;
 		
-		ComponentUtils.fireComponentEvent(KinectSystem, "onMouseUp", [x, y, -1]);
+		ComponentUtils.fireComponentEvent(KinectSystem.getListName(), "onMouseUp", [x, y, -1]);
 	}
 
 	this.fireHandMoveListener = function(x, y){
@@ -21,7 +21,7 @@ var KinectSystem = new function(){
 		x = x - rect.left;
 		y = y - rect.top;
 		
-		ComponentUtils.fireComponentEvent(KinectSystem, "onMouseMove", [x, y]);
+		ComponentUtils.fireComponentEvent(KinectSystem.getListName(), "onMouseMove", [x, y]);
 	}
 	
 	this.onLoadKinect = function(){

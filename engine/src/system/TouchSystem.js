@@ -6,7 +6,7 @@ var TouchSystem = new function(){
 			evt.preventDefault();
 		}
 		if(evt.changedTouches && evt.changedTouches.length > 0) {
-			ComponentUtils.fireComponentEvent(TouchSystem, "onTouchStart", [evt.touches, evt.changedTouches]);
+			ComponentUtils.fireComponentEvent(TouchSystem.getListName(), "onTouchStart", [evt.touches, evt.changedTouches]);
 		}
 	}
 
@@ -15,7 +15,7 @@ var TouchSystem = new function(){
 			evt.preventDefault();
 		}
 		if(evt.changedTouches && evt.changedTouches.length > 0) {
-			ComponentUtils.fireComponentEvent(TouchSystem, "onTouchMove", [evt.touches, evt.changedTouches]);
+			ComponentUtils.fireComponentEvent(TouchSystem.getListName(), "onTouchMove", [evt.touches, evt.changedTouches]);
 		}
 	}
 
@@ -24,7 +24,7 @@ var TouchSystem = new function(){
 			evt.preventDefault();
 		}
 		if(evt.changedTouches && evt.changedTouches.length > 0) {
-			ComponentUtils.fireComponentEvent(TouchSystem, "onTouchEnd", [evt.touches, evt.changedTouches]);
+			ComponentUtils.fireComponentEvent(TouchSystem.getListName(), "onTouchEnd", [evt.touches, evt.changedTouches]);
 		}
 	}
 

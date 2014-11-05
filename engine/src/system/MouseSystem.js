@@ -64,7 +64,7 @@ var MouseSystem = new function(){
 		var y = evt.offsetY || evt.layerY;
 		var wich = evt.wich;
 
-		ComponentUtils.fireComponentEvent(MouseSystem, "onClick", [x, y, wich]);
+		ComponentUtils.fireComponentEvent(MouseSystem.getListName(), "onClick", [x, y, wich]);
 	}
 
 	/**
@@ -81,7 +81,7 @@ var MouseSystem = new function(){
 		var y = evt.offsetY || evt.layerY;
 		var wich = evt.wich;
 
-		ComponentUtils.fireComponentEvent(MouseSystem, "onMouseDown", [x, y, wich]);
+		ComponentUtils.fireComponentEvent(MouseSystem.getListName(), "onMouseDown", [x, y, wich]);
 	}
 
 	/**
@@ -98,7 +98,7 @@ var MouseSystem = new function(){
 		var y = evt.offsetY || evt.layerY;
 		var wich = evt.wich;
 
-		ComponentUtils.fireComponentEvent(MouseSystem, "onMouseUp", [x, y, wich]);
+		ComponentUtils.fireComponentEvent(MouseSystem.getListName(), "onMouseUp", [x, y, wich]);
 	}
 
 	/**
@@ -114,7 +114,7 @@ var MouseSystem = new function(){
 		var x = evt.offsetX || evt.layerX;
 		var y = evt.offsetY || evt.layerY;
 
-		ComponentUtils.fireComponentEvent(MouseSystem, "onMouseMove", [x, y]);
+		ComponentUtils.fireComponentEvent(MouseSystem.getListName(), "onMouseMove", [x, y]);
 	}
 
 	/**

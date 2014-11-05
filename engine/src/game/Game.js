@@ -48,9 +48,7 @@ var Game = new function(){
 	this.loadGame = function(){
 		for(var i in this.listComponents){
 			var component = this.listComponents[i];
-			if(component instanceof Component){
-				component.onLoad();
-			}
+			component.onLoad();
 		}
 	}
 
@@ -143,11 +141,9 @@ var Game = new function(){
 	* @method stepGame
 	*/
 	this.stepGame = function(){
-		for(var i in this.scene.listLayers){
+		for(var i=0; i<this.scene.listLayers.length; i++){
 			var layer = this.scene.listLayers[i];
-			if(layer instanceof Layer){
-				layer.world.Step((1.0/60), 1);
-			}
+			layer.world.Step((1.0/60), 1);
 		}
 		LogicSystem.fireCollideListener();
 	}
@@ -183,31 +179,21 @@ var Game = new function(){
 		this.scene.onLoad();
 		for(var i in this.scene.listComponents){
 			var component = this.scene.listComponents[i];
-			if(component instanceof Component){
+			component.onLoad();
+		}
+		for(var i=0; i<this.scene.listLayers.length; i++){
+			var layer = this.scene.listLayers[i];
+			layer.onLoad();
+			for(var j in layer.listComponents){
+				var component = layer.listComponents[j];
 				component.onLoad();
 			}
-		}
-		for(var i in this.scene.listLayers){
-			var layer = this.scene.listLayers[i];
-			if(layer instanceof Layer){
-				layer.onLoad();
-				for(var j in layer.listComponents){
-					var component = layer.listComponents[j];
-					if(component instanceof Component){
-						component.onLoad();
-					}
-				}
-				for(var j in layer.listGameObjects){
-					var gameObject = layer.listGameObjects[j];
-					if(gameObject instanceof GameObject){
-						gameObject.onLoad();
-						for(var k in gameObject.listComponents){
-							var component = gameObject.listComponents[k];
-							if(component instanceof Component){
-								component.onLoad();
-							}
-						}
-					}
+			for(var j=0; j<layer.listGameObjects.length; j++){
+				var gameObject = layer.listGameObjects[j];
+				gameObject.onLoad();
+				for(var k in gameObject.listComponents){
+					var component = gameObject.listComponents[k];
+					component.onLoad();
 				}
 			}
 		}

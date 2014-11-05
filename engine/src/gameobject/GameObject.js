@@ -209,9 +209,7 @@ GameObject.prototype.createBodyDef = function(x, y){
 GameObject.prototype.destroy = function(){
 	for(var i in this.listComponents){
 		var component = this.listComponents[i];
-		if(component instanceof Component){
-			component.onDestroy();
-		}
+		component.onDestroy();
 	}
 	this.layer.listGameObjects = ArrayUtils.removeElement(this.layer.listGameObjects, this);
 }

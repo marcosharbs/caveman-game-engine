@@ -168,15 +168,15 @@ var GamepadSystem = new function(){
   }
   
   this.fireStickMoved = function(value, stick, direction){
-  	ComponentUtils.fireComponentEvent(GamepadSystem, "onStickMoved", [value, stick, direction]);
+  	ComponentUtils.fireComponentEvent(GamepadSystem.getListName(), "onStickMoved", [value, stick, direction]);
   }
 	
   this.fireButtonPressed = function(button){
-  	ComponentUtils.fireComponentEvent(GamepadSystem, "onButtonPressed", [button]);
+  	ComponentUtils.fireComponentEvent(GamepadSystem.getListName(), "onButtonPressed", [button]);
   }
   
   this.fireButtonReleased = function(button){
-  	ComponentUtils.fireComponentEvent(GamepadSystem, "onButtonReleased", [button]);
+  	ComponentUtils.fireComponentEvent(GamepadSystem.getListName(), "onButtonReleased", [button]);
   }
   
   this.getTag = function(){

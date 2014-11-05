@@ -16,7 +16,7 @@ var KeySystem = new function(){
 	* @param {Event} evt
 	*/
 	this.fireKeyDownListener = function(evt){
-		ComponentUtils.fireComponentEvent(KeySystem, "onKeyDown", [evt.keyCode]);
+		ComponentUtils.fireComponentEvent(KeySystem.getListName(), "onKeyDown", [evt.keyCode]);
 	}
 
 	/**
@@ -28,7 +28,7 @@ var KeySystem = new function(){
 	* @param {Event} evt
 	*/
 	this.fireKeyUpListener = function(evt){
-		ComponentUtils.fireComponentEvent(KeySystem, "onKeyUp", [evt.keyCode]);
+		ComponentUtils.fireComponentEvent(KeySystem.getListName(), "onKeyUp", [evt.keyCode]);
 	}
 
 	/**

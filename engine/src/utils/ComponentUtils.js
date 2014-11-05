@@ -79,33 +79,33 @@ var ComponentUtils = new function(){
 		}
 	}
 
-	this.fireComponentEvent = function(system, functionStr, paramsArray){
-		if(Game[system.getListName()]){
-			for(var i in Game[system.getListName()]){
-				var component = Game[system.getListName()][i];
+	this.fireComponentEvent = function(listName, functionStr, paramsArray){
+		if(Game[listName]){
+			for(var i in Game[listName]){
+				var component = Game[listName][i];
 				component[functionStr].apply(component, paramsArray);
 			}
 		}
 		if(Game.scene){
-			if(Game.scene[system.getListName()]){
-				for(var i in Game.scene[system.getListName()]){
-					var component = Game.scene[system.getListName()][i];
+			if(Game.scene[listName]){
+				for(var i in Game.scene[listName]){
+					var component = Game.scene[listName][i];
 					component[functionStr].apply(component, paramsArray);
 				}
 			}
 			for(var i=0; i<Game.scene.listLayers.length; i++){
 				var layer = Game.scene.listLayers[i];
-				if(layer[system.getListName()]){
-					for(var j in layer[system.getListName()]){
-						var component = layer[system.getListName()][j];
+				if(layer[listName]){
+					for(var j in layer[listName]){
+						var component = layer[listName][j];
 						component[functionStr].apply(component, paramsArray);
 					}
 				}
 				for(var j=0; j<layer.listGameObjects.length; j++){
 					var gameObject = layer.listGameObjects[j];
-					if(gameObject[system.getListName()]){
-						for(var k in gameObject[system.getListName()]){
-							var component = gameObject[system.getListName()][k];
+					if(gameObject[listName]){
+						for(var k in gameObject[listName]){
+							var component = gameObject[listName][k];
 							component[functionStr].apply(component, paramsArray);
 						}
 					}

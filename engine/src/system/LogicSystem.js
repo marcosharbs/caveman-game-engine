@@ -18,7 +18,7 @@ var LogicSystem = new function(){
 	* @static
 	*/
 	this.fireUpdateListener = function(deltaTime){
-		ComponentUtils.fireComponentEvent(LogicSystem, "onUpdate", [deltaTime]);
+		ComponentUtils.fireComponentEvent(LogicSystem.getListName(), "onUpdate", [deltaTime]);
 	}
 
 	/**
@@ -56,14 +56,11 @@ var LogicSystem = new function(){
 		var keyCollide1 = this.getCollideKey(gameObject1, gameObject2);
 		var keyCollide2 = this.getCollideKey(gameObject2, gameObject1);	
 
-		if((!ArrayUtils.getElementByKey(this.listCollides, keyCollide1) ||
-			ArrayUtils.getElementByKey(this.listCollides, keyCollide1) == "undefined") &&
-		    (!ArrayUtils.getElementByKey(this.listCollides, keyCollide2) ||
-		    ArrayUtils.getElementByKey(this.listCollides, keyCollide2) == "undefined")){
+		if(!ArrayUtils.getElementByKey(this.listCollides, keyCollide1)  &&
+		   !ArrayUtils.getElementByKey(this.listCollides, keyCollide2)){
 
 			var collideInfo = new CollideInfo().initialize(gameObject1, gameObject2);
 			this.listCollides = ArrayUtils.putElement(this.listCollides, keyCollide1, collideInfo);
-
 		}
 	}
 
