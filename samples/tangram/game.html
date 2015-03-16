@@ -1,7 +1,6 @@
 <html>
 <head>
 <script src="./js/engine.min.js"></script>
-<script src="./js/MoveTangramComponent.js"></script>
 <script type="text/javascript">
 AssetStore.addAsset(new Asset().initialize("block", "./assets/block.png", "IMAGE"));
 
@@ -16,7 +15,7 @@ var groundRB = new RigidBodyComponent().initialize(0,0,false,true,0.2);
 var groundImg = new ImageRenderComponent().initialize(AssetStore.getAsset("block").getAssetInstance(), true, "HORIZONTAL");
 var fpsMeter = new FpsMeterComponent().initialize();
 var mcc = new MoveCameraComponent().initialize(65, 68, 87, 83, 33, 34, 72, 75, 20, 0.1, 5);
-var mtc = new MoveTangramComponent().initialize();
+
 var p1 = new PolygonObject().initialize(430, 200, [new Point2D().initialize(-50, 100),
                                                        new Point2D().initialize(-50, -100),
                                                        new Point2D().initialize(50, 0)], 
@@ -91,6 +90,8 @@ layer.addGameObject(ground);
 scene.addLayer(layer);
 
 layer.setGravity(0);
+
+ComponentUtils.addComponent(layer, new DragControlComponent().initialize());
 
 ComponentUtils.removeComponent(ground, ComponentUtils.getComponent(ground, "BOX_RENDER_COMPONENT"));
 

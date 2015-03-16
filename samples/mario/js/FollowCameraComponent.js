@@ -8,7 +8,7 @@ FollowCameraComponent.prototype.onUpdate = function(delta){
 
 FollowCameraComponent.prototype.getSystems = function(){
   var systems = new Array();
-  systems = ArrayUtils.addElement(systems, LogicSystem.getTag());
+  systems = ArrayUtils.addElement(systems, LogicSystem);
   return systems;
 }
 

@@ -9,8 +9,8 @@ MarioMoveComponent.prototype.rightPressed = false;
 
 MarioMoveComponent.prototype.getSystems = function(){
 	var systems = new Array();
-	systems = ArrayUtils.addElement(systems, LogicSystem.getTag());
-        systems = ArrayUtils.addElement(systems, KeySystem.getTag());
+	systems = ArrayUtils.addElement(systems, LogicSystem);
+        systems = ArrayUtils.addElement(systems, KeySystem);
 	return systems;
 }
 

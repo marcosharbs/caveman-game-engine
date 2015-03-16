@@ -133,7 +133,8 @@ MoveSpaceShipComponent.prototype.onCollide = function(otherGameObject){
 */
 MoveSpaceShipComponent.prototype.getSystems = function(){
   var systems = new Array();
-  systems = ArrayUtils.addElement(systems, KeySystem.getTag());
+  systems = ArrayUtils.addElement(systems, KeySystem);
+  systems = ArrayUtils.addElement(systems, LogicSystem);
   return systems;
 }
 
