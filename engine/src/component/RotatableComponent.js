@@ -72,11 +72,13 @@ RotatableComponent.prototype.onTouchStart = function(touchList){
 	}
 }
 
-RotatableComponent.prototype.onTouchMove = function(touchList){
+RotatableComponent.prototype.onTouchMove = function(touchList, changedTouches){
 	if(this.touchCount == 2 && touchList.length == 2){
-		var dragComp = ComponentUtils.getComponent(this.owner, "DRAGGABLE_COMPONENT");
+		var dragComp = ComponentUtils.getComponent(this.owner.layer, "DRAG_CONTROL_COMPONENT");
 		if(dragComp != null){
-			dragComp.endDrag();
+			for(var i=0; i<changedTouches.length; i++){
+				dragComp.endDrag(changedTouches[i].identifier);
+			}
 		}
 
 		var fPoint = MouseSystem.getNormalizedCoordinate(touchList[0].pageX, touchList[0].pageY);
