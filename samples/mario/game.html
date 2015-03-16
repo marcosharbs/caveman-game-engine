@@ -99,11 +99,12 @@ ComponentUtils.removeComponent(backgroundObject, ComponentUtils.getComponent(bac
 function createGame(){
 Game.init(document.getElementById("gameCanvas"), scene);
 Game.camera.centerPoint.x = 200; Game.camera.centerPoint.y = 315;
+Game.camera.scale.setScale(1.5, 1.5);
 }
 </script>
 
 </head>
 <body onload="createGame();">
-<canvas id="gameCanvas" width="1024" height="800" style="border: 1px solid black;" />
+<canvas id="gameCanvas" width="1024" height="700" style="border: 1px solid black;" />
 </body>
 </html>
